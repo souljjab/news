@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오늘의 뉴스 브리핑 · 2026-09-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F4EE; --card:#FFFFFF; --ink:#1C1A15; --sub:#756F63;
+  --rule:#DCD6C8; --seal:#B3261E; --steel:#2C3D5B; --wash:#F9F7F1;
+  --down:#1B5FA8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  font-size:15.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:840px;margin:0 auto;padding:40px 20px 72px}
+.masthead{display:flex;align-items:center;gap:18px}
+.archive-link{margin-left:auto;flex:0 0 auto;align-self:center;
+  display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+  border:1px solid var(--rule);border-radius:20px;background:var(--card);
+  color:var(--steel);font-size:12.5px;font-weight:500;padding:7px 14px;
+  transition:border-color .15s,color .15s}
+.archive-link:hover{border-color:var(--steel);color:var(--ink)}
+.foot-link{color:var(--steel)}
+@media(max-width:520px){
+  .masthead{flex-wrap:wrap}
+  .archive-link{margin-left:74px;margin-top:-4px}
+}
+.seal{flex:0 0 auto;width:64px;height:64px;border:2px solid var(--seal);
+  color:var(--seal);display:flex;flex-direction:column;align-items:center;
+  justify-content:center;font-family:'Noto Serif KR',serif;line-height:1.05}
+.seal span{font-size:12px;letter-spacing:2px}
+.seal b{font-size:27px;font-weight:900}
+.eyebrow{margin:0;font-size:11px;letter-spacing:3.5px;color:var(--sub)}
+.masthead h1{margin:2px 0 4px;font-family:'Noto Serif KR',serif;
+  font-weight:900;font-size:31px;letter-spacing:-.5px}
+.mast-meta{margin:0;font-size:13px;color:var(--sub)}
+.double-rule{margin:20px 0 6px;border-top:3px solid var(--ink);
+  border-bottom:1px solid var(--ink);height:3px}
+.notice{font-size:12.5px;color:var(--sub);margin:8px 0 22px}
+.market{border:1px solid var(--rule);border-radius:6px;background:var(--card);
+  padding:16px 18px 14px;margin:0 0 8px}
+.market h2{margin:0 0 12px;font-family:'Noto Serif KR',serif;font-size:15px;
+  font-weight:700;display:flex;align-items:center;gap:8px}
+.market h2 .tick{width:9px;height:9px;background:var(--steel);flex:0 0 auto}
+.market h2 em{font-style:normal;font-weight:400;font-size:11.5px;
+  color:var(--sub);margin-left:auto}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.q{border:1px solid var(--rule);border-radius:4px;background:var(--wash);
+  padding:10px 12px}
+.q-name{margin:0 0 3px;font-size:12px;color:var(--sub)}
+.q-price{margin:0;font-family:'Noto Serif KR',serif;font-size:19px;
+  font-weight:700;letter-spacing:-.3px}
+.q-chg{margin:2px 0 0;font-size:12.5px;font-weight:500}
+.q-chg.up{color:var(--seal)}
+.q-chg.down{color:var(--down)}
+.q-chg.flat{color:var(--sub)}
+.market-note{margin:11px 0 0;font-size:11.5px;color:var(--sub)}
+.sec{margin:44px 0 0}
+.sec-title{display:flex;align-items:baseline;gap:10px;margin:0 0 16px;
+  font-family:'Noto Serif KR',serif;font-size:21px;font-weight:700}
+.sec-title .tick{width:11px;height:11px;background:var(--seal);
+  flex:0 0 auto;align-self:center}
+.sec-title em{font-style:normal;font-weight:400;font-size:12.5px;
+  color:var(--sub);margin-left:auto}
+.card{display:flex;gap:16px;background:var(--card);border:1px solid var(--rule);
+  border-radius:6px;padding:20px 22px;margin:0 0 14px}
+.rank{flex:0 0 auto;width:34px;height:34px;border:1.5px solid var(--seal);
+  border-radius:50%;color:var(--seal);display:flex;align-items:center;
+  justify-content:center;font-family:'Noto Serif KR',serif;font-size:17px;
+  font-weight:700;margin-top:2px}
+.card-body{min-width:0;flex:1}
+.card h3{margin:0 0 6px;font-family:'Noto Serif KR',serif;
+  font-size:18.5px;font-weight:700;line-height:1.45;letter-spacing:-.2px}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--seal);text-decoration:underline}
+.meta{margin:0 0 12px;font-size:12.5px;color:var(--sub)}
+.chip{display:inline-block;border:1px solid var(--rule);border-radius:3px;
+  padding:1px 7px;font-size:11.5px;color:var(--steel);background:var(--wash)}
+.chip.src{color:var(--sub)}
+.summary{background:var(--wash);border-left:3px solid var(--steel);
+  padding:12px 15px;border-radius:0 4px 4px 0}
+.summary .cap{display:block;font-size:11px;letter-spacing:2px;
+  color:var(--steel);margin-bottom:4px}
+.summary p{margin:0;font-size:14.5px}
+details{margin-top:12px}
+summary{cursor:pointer;font-size:13px;color:var(--steel);
+  font-weight:500;user-select:none}
+summary:hover{color:var(--seal)}
+.orig{margin-top:10px;padding:14px 16px;border:1px dashed var(--rule);
+  border-radius:4px;font-size:14px;color:#39362E;max-height:460px;overflow:auto}
+.orig p{margin:0 0 10px}
+footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:12px;color:var(--sub)}
+@media (max-width:560px){
+  .wrap{padding:26px 14px 56px}
+  .masthead h1{font-size:24px}
+  .card{padding:16px 14px;gap:12px}
+  .sec-title em{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="seal"><span>9월</span><b>29</b></div>
+    <div>
+      <p class="eyebrow">NAVER NEWS · DAILY BRIEFING</p>
+      <h1>오늘의 뉴스 브리핑</h1>
+      <p class="mast-meta">2026-09-29 (화) 21:00 기준 · 전체 TOP 5 + 정치·경제·사회·IT/과학·세계 각 4건 · 중복 기사 없음</p>
+    </div>
+    <a class="archive-link" href="https://souljjab.github.io/news/archive/">지난 브리핑 &rarr;</a>
+  </header>
+  <div class="double-rule"></div>
+  <p class="notice">AI 요약 없이 기사 원문을 그대로 실었습니다.</p>
+  <section class="market">
+    <h2><span class="tick"></span>오늘의 시세<em>환율 · 국내외 종목</em></h2>
+    <div class="qgrid">
+      <div class="q"><p class="q-name">원/달러 환율</p><p class="q-price">1,353.28원</p><p class="q-chg up">▲ 2.92 (+0.22%)</p></div>
+      <div class="q"><p class="q-name">삼성전자</p><p class="q-price">275,000원</p><p class="q-chg up">▲ 5,000 (+1.85%)</p></div>
+      <div class="q"><p class="q-name">SK하이닉스</p><p class="q-price">1,790,000원</p><p class="q-chg up">▲ 22,000 (+1.24%)</p></div>
+      <div class="q"><p class="q-name">SOXL</p><p class="q-price">$142.29</p><p class="q-chg down">▼ 9.16 (-6.05%)</p></div>
+      <div class="q"><p class="q-name">NNE</p><p class="q-price">$16.16</p><p class="q-chg down">▼ 0.83 (-4.89%)</p></div>
+    </div>
+    <p class="market-note">종가 기준입니다. 국내 종목·환율은 직전 거래일 종가, 미국 종목은 가장 최근 미국 장 마감가입니다. 출처: 네이버 금융 · 야후 파이낸스</p>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🔥 전체 인기 TOP 5<em>카테고리 무관 · 언론사별 랭킹 상위</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/015/0005336802" target="_blank" rel="noopener">&quot;71년 살던 집에서 쫓겨났다&quot;…87세 노인 사연에 &#x27;분노 폭발&#x27;</a></h3>
+      <p class="meta">한국경제 · 2026-09-28 18:03:16 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>주택난에 87세 노인 쫓겨나</p>
+<p>성난 스페인 시민들, 거리로</p>
+<p>월세 급등…임대 기업에 분노</p>
+<p>美서도 기관투자가 규제 목소리</p>
+<p>스페인과 미국 등 세계 전역에서 주거비가 치솟아 주택난이 심화하고 있다. 사모펀드와 부동산 투자 회사 등 민간 임대사업자와 임차인 간 갈등도 격화하고 있다.</p>
+<p>27일(현지시간) 파이낸셜타임스(FT)에 따르면 스페인 국민 수만 명은 지난 26일 수도 마드리드 시내를 행진하며 주거비 인하와 세입자 보호 조치 강화를 촉구했다. 이번 시위는 87세 여성 세입자인 마리아 델 카르멘 아바스칼이 주거지에서 강제 퇴거당하면서 촉발됐다. 마드리드에 살던 그는 23일 71년간 거주한 아파트에서 쫓겨났다. 경찰이 문을 부수고 들어온 뒤 아바스칼이 들것에 실려 나가는 퇴거 현장 영상이 스페인 전역에 퍼지면서 여론이 폭발했다.</p>
+<p>1956년부터 이 주택에 거주한 아바스칼은 임대료 상한 규정에 따라 500유로(약 77만원)의 월세를 내고 있었다. 하지만 새로 아파트 주인이 된 부동산 투자 회사가 부친 명의의 임대료 계약이 아바스칼에게 승계될 수 있는지를 법적으로 문제 삼았다. 이후 회사는 월세를 2650유로(약 410만원)로 대폭 올렸다.</p>
+<p>주거비 급등으로 국민 불만이 고조된 상황에서 이 사건이 민심에 불을 지핀 것으로 풀이된다. 부동산 웹사이트 아이디얼리스타에 따르면 지난 5년간 마드리드 임대료는 61% 올랐다.</p>
+<p>미국에서도 11월 중간선거를 앞두고 사모펀드 등 기관투자가의 임대용 주택 매입을 제한해야 한다는 목소리가 커지고 있다. FT 자체 분석에 따르면 올해 중간선거에 나선 후보들이 주거비 급등 원인으로 사모펀드와 기업형 임대사업자 등 기관투자가를 꼽는 사례가 크게 늘었다.</p>
+<p>접전 지역 상·하원 후보 가운데 24명 이상이 사모펀드와 헤지펀드 등 기관투자가의 주택 매입, 소유를 제한하겠다고 공약했다. 공화당에서도 기관투자가의 주택 매입을 비판하고 있다. 아이오와주 연방 상원의원 선거에 출마한 애슐리 힌슨 공화당 후보는 “거대 기관투자가들이 주택시장에 뛰어들어 생애 첫 주택을 사려는 가정과 경쟁하는 것은 주택 구입자의 좌절감만 키울 뿐”이라고 지적했다.</p>
+<p>기관투자가의 주택 매입을 제한하려는 움직임은 연방정부 차원에서도 나타나고 있다. 도널드 트럼프 대통령은 1월 연방기관에 대형 기관투자가의 단독주택 투자를 제한하고, 이들의 주택 매입에 반독점법 위반 소지가 있는지 검토하도록 지시하는 행정명령에 서명했다.</p>
+<p>주택업계에서는 기관투자가의 필요성을 강조하는 반론도 나온다. 그레그 브라운 미국아파트협회 수석부회장은 “다양한 주택을 충분히 공급하려면 기관투자가가 필요하다”고 말했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/092/0002439155" target="_blank" rel="noopener">오픈AI, 안전성 미충족 &#x27;GPT-6.1 아스트라&#x27; 출시 철회</a></h3>
+      <p class="meta">지디넷코리아 · 2026-09-29 17:03:14 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>정렬·권한 범위서 이전 모델보다 퇴보…내부 테스트서 안전 기준 미충족</p>
+<p>인공지능(AI) 업계에서 시스템의 통제 이탈 우려가 커지는 가운데 오픈AI가 안전성 문제를 이유로 차세대 모델 출시를 철회했다. 주요 AI 개발업체가 안전 우려 때문에 새로운 모델의 출시를 포기한 건 이례적이다.</p>
+<p>29일(현지시간) 월스트리트저널(WSJ)에 따르면 오픈AI는 다음 달 챗GPT와 코딩 도구 코덱스에 탑재할 예정이었던 &#x27;GPT-6.1 아스트라&#x27;를 출시하지 않기로 결정했다.</p>
+<p>사치 자인 오픈AI 안전 시스템 책임자는 WSJ와의 인터뷰를 통해 내부 평가에서 아스트라가 이전 모델보다 정렬과 권한 범위 두 영역에서 퇴보해 회사가 요구하는 안전 기준을 충족하지 못했다고 밝혔다.</p>
+<p>미국 인공지능(AI) 회사 오픈AI가 개발한 AI 채팅로봇 &#x27;챗GPT&#x27; (사진=로이터/뉴스1)</p>
+<p>정렬은 AI가 사용자의 의도와 지시에 얼마나 부합하는 방식으로 행동하는지를 평가하는 개념이다. 아스트라는 자신이 특정 작업을 수행했는지 여부를 사용자에게 일관되고 정직하게 알리지 않는 등 기만적 성향이 이전 모델보다 강하게 나타난 것으로 전해졌다.</p>
+<p>권한 범위에서도 문제가 확인됐다. AI가 사용자의 별도 승인을 받지 않은 채 작업을 계속 진행하거나 안전하지 않을 가능성이 있는 상황에서도 외부 도구와 서비스를 사용하려는 행동이 나타난 것이다.</p>
+<p>반면 작문 능력과 복잡한 작업을 사람의 지속적인 개입 없이 처음부터 끝까지 수행하는 능력에서는 이전 모델보다 향상된 것으로 평가됐다. 오픈AI는 아스트라의 성능 개선에도 불구하고, 안전성과 정렬 기준을 충족하지 못한 만큼 문제 원인을 파악하고 차기 모델의 안전성을 높이는 데 집중할 방침이다.</p>
+<p>이번 조치는 올해 AI 업계 전반에서 시스템이 통제 범위를 벗어나 오작동했다는 보도가 잇따른 가운데 나왔다. 최근 몇 주간 오픈AI와 앤트로픽은 경쟁사들에 최첨단 AI 모델 개발 속도를 늦추고 안전 기준에 대한 투자를 확대할 것을 촉구하는 한편, 자체적인 AI 개발 속도 역시 조절하겠다는 입장을 밝힌 바 있다.</p>
+<p>자인은 WSJ 측에 &quot;안전과 정렬 문제에는 항상 상충 관계가 존재한다&quot;며 &quot;모델이 주어진 범위를 지키면서도 작업 도중 장애물이나 난관에 부딪혔다는 이유로 지나치게 소극적이거나 게으른 태도를 보이지 않도록 적절한 균형점을 찾아야 한다&quot;고 말했다.</p>
+<p>이어 &quot;오픈AI는 아스트라에서 확인된 문제의 근본 원인을 파악하기 위해 여러 차례 심층 조사를 진행할 계획&quot;이라고 부연했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/214/0001526396" target="_blank" rel="noopener">북한군 포로 한국행 공개 우크라, 북한군 위협 잇따라 강조</a></h3>
+      <p class="meta">MBC · 2026-09-29 18:13:18 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>우크라이나가 북한군 포로 2명의 한국행을 공개한 데 이어 북한의 드론 생산과 추가 파병 가능성을 거론하며 북한군의 위협을 잇달아 부각하고 있습니다.</p>
+<p>우크라이나 대통령실에 따르면, 젤렌스키 대통령은 현지시간 28일 대국민 연설을 통해 북한이 전쟁에서 배운 기술로 공격용 드론을 생산하고 있다고 주장했습니다.</p>
+<p>또, 현재 러시아 영토에 북한군 8천 명 이상이 있으며 앞으로 1만 명이 추가 배치될 것으로 예상했습니다.</p>
+<p>북한군의 참전 경험과 러시아의 군사기술 지원이 동북아에도 위협이 될 수 있다는 점을 강조해 한국과 일본 등의 지원을 끌어내려는 의도로 풀이됩니다.</p>
+<p>한편, 우크라이나 측은 북한군 포로의 한국 송환에 대한 &#x27;비공개 합의&#x27; 논란과 관련해 아직까지 입장을 내놓지 않고 있습니다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/021/0002821875" target="_blank" rel="noopener">“핵 양보시 동결자금 해제 제안”… 미국·이란 물밑대화 활발</a></h3>
+      <p class="meta">문화일보 · 2026-09-29 11:57:17 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>액시오스, 美 관계자 발언 보도</p>
+<p>이란 제안 ‘7개 조항’서는 이견</p>
+<p>도널드 트럼프 미국 대통령이 이란의 핵 프로그램 양보를 대가로 경제 제재 완화와 동결자금 해제를 검토할 의향이 있다는 미 정부 관계자들의 발언이 나왔다. 트럼프 대통령은 이에 대해 즉각 부인하고 나섰지만 미국 중간선거를 앞둔 현시점에서 미국과 이란 간 물밑 교섭이 활발히 진행되고 있음을 보여주고 있다.</p>
+<p>미 인터넷매체 액시오스는 28일(현지시간) 미 정부 관계자들을 인용해 트럼프 대통령이 이란이 핵 프로그램과 관련해 구체적인 조치를 취할 경우 제재를 완화하고 해외 동결자금을 풀어줄 의향이 있다고 보도했다. 액시오스에 따르면 한 미 정부 관계자는 최근 간접 협상을 “긍정적이고 건설적”이라고 평가하면서도 “핵 문제가 해결되지 않으면 합의도 없다”며 양측이 약속 이행 시점과 어느 쪽이 먼저 조치할지를 놓고 여전히 이견을 보이고 있다고 밝혔다.</p>
+<p>현재 이란은 호르무즈 해협 문제가 우선이라는 입장이다. 아바스 아라그치 이란 외교장관은 이날 뉴욕에서 카타르 중재단과 만나 이란의 ‘7개 조항 제안서’를 논의했다. 이란은 미국이 해상봉쇄 해제와 동결자금 반환, 휴전, 이란산 원유 수출 제재 면제 등을 이행하면 7일 안에 호르무즈 해협을 재개방하겠다는 안을 제시했다. 반면 미국은 이란이 핵 프로그램에서 구체적인 양보를 먼저 해야 한다는 입장이다.</p>
+<p>아라그치 장관도 핵 문제에선 물러설 뜻이 없다는 입장을 분명히 하고 있다. 그는 이날 이란이 핵 문제에서 유연성을 보일 것이라는 관측에 대해 “현재로서는 어떠한 유연성도 없으며 이에 대한 논의조차 이뤄진 적이 없다”며 “지금은 오직 호르무즈 해협 문제뿐”이라고 밝혔다. 이에 따라 카타르 등 중재국의 역할도 이란의 호르무즈 재개방 조건과 미국의 핵 양보 요구 사이에서 절충점을 찾는 데 집중되고 있다.</p>
+<p>사우디아라비아의 호르무즈 우회 수송 능력 회복도 이란에는 부담 요인이다. 사우디가 동서 원유 파이프라인을 재가동하면서 홍해를 통한 수출 여력이 회복될수록 이란이 호르무즈 해협을 협상 지렛대로 활용할 수 있는 힘은 약해질 수 있기 때문이다. 실제로 최근 호르무즈를 통과하는 에너지 선박 운항도 일부 회복되는 흐름이 나타나고 있다.</p>
+<p>한편 트럼프 대통령은 같은 날 저녁 자신의 트루스소셜을 통해 액시오스 보도를 직접 부인했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">5</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/008/0005419757" target="_blank" rel="noopener">관세 압박 통했나...TSMC, 애리조나 이어 텍사스에 공장 건설 추진</a></h3>
+      <p class="meta">머니투데이 · 2026-09-29 16:03:32 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>세계 최대 파운드리(반도체 수탁생산) 기업인 대만 TSMC가 미국 내 두 번째 웨이퍼 공장 건설을 추진하는 것으로 알려졌다.</p>
+<p>29일 대만 연합신문망(UDN) 등은 소식통을 인용해 TSMC가 주요 고객사의 수요와 미국의 대미 투자 압박 등에 대응하고자 미국 내 생산 시설 확대 계획을 추진 중이라며 이같이 보도했다. 보도에 따르면 TSMC의 두 번째 웨이퍼 공장 후보지로는 텍사스주 댈러스 지역이 거론되고 있다.</p>
+<p>소식통은 &quot;TSMC의 댈러스 공장 건설 추진은 엔비디아, 인텔, AMD, 애플 등 주요 고객사들의 미국 내 반도체 생산 요구와 도널드 트럼프 미국 행정부의 관세 위협 때문&quot;이라며 &quot;대만 내 토지·용수·전력 부족 문제도 TSMC의 해외 생산 거점 확대 추진 배경 중 하나&quot;라고 말했다. UDN에 따르면 올해 상반기 TSMC 매출에서 미국 고객사가 차지한 비중은 약 76%에 달했다.</p>
+<p>댈러스 공장이 건설되면 TSMC는 첫 번째 미국 웨이퍼 생산 시설인 애리조나 피닉스 공장과 텍사스의 첨단기술 생태계를 연결하는 이른바 &#x27;남부 반도체 생산 벨트&#x27;를 구축할 수 있다고 대만 언론은 평가했다. 애리조나와 텍사스를 미국 남부의 양대 반도체 거점으로 묶어 고객사의 수요에 대응하고 공급망을 분산한다는 구상이다.</p>
+<p>후보지로 거론되는 텍사스주 북부 지역은 이미 반도체 제조 기반과 실리콘 웨이퍼 공급망, 광통신 산업, 방산 산업 등이 자리 잡고 있어 &#x27;실리콘 초원&#x27;(Silicon Prairie)로 불린다. 애리조나보다 노동력, 전력 공급 등이 풍부하고 세금이 낮다는 장점도 있다. 텍사스인스트루먼츠(TI), 코히어런트, 삼성전자, 테슬라 등이 이 지역에서 사업을 운영 중이다.</p>
+<p>TSMC 공장을 중심으로 산업 클러스터가 구축되면 반도체 공급망을 내수화하려는 트럼프 행정부의 계획에도 힘이 실릴 전망이다.</p>
+<p>한편 TSMC는 미국 애리조나주 피닉스에 웨이퍼 공장 최대 10곳과 첨단 패키징 공장 2곳, 연구개발(R&amp;D)센터 1곳을 건설하는 대규모 투자 프로젝트를 추진 중으로, 투자 규모는 2020년 120억달러(약 16조3000억원)에서 현재 2650억달러(360억원)로 확대했다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🌍 세계 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/003/0014221829" target="_blank" rel="noopener">美, 캐나다산 주류·유제품·오토바이 수입금지 개시…&quot;USMCA 붕괴 우려&quot;</a></h3>
+      <p class="meta">뉴시스 · 2026-09-29 17:30:16 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>총액 1.3조원 상당 추산…87%는 주류</p>
+<p>&quot;총수출 0.25%지만 긴장 고조 우려&quot;</p>
+<p>[서울=뉴시스] 김승민 기자 = 도널드 트럼프 미국 행정부가 발표한 캐나다산 주류, 유제품, 오토바이 등 일부 상품에 대한 수입 금지 조치가 예정대로 시행에 들어갔다.</p>
+<p>미국 뉴욕타임스(NYT), 캐나다 CBC 등에 따르면 미국 세관 당국은 29일(현지 시간) 0시1분부터 캐나다산 주류, 유제품, 오토바이 중 지정 상품에 대한 &#x27;조건 없는 반입거부(unconditionally rejected)&#x27;를 발효한다고 밝혔다.</p>
+<p>트럼프 대통령은 지난 8일 대통령포고문을 통해 &quot;특정 캐나다산 제품의 수입을 금지하는 것이 미국의 이익에 부합한다&quot;며 맥주·와인·사케·브랜디 등 대다수 주류, 유청단백질·변성유청 등 유제품 14개 품목, 배기량 800cc 이상 왕복내연기관 오토바이의 수입을 막겠다고 예고했는데, 이날 시행에 착수한 것이다.</p>
+<p>중도우파 성향 미국 싱크탱크 미국행동포럼(AAF)에 따르면 2025년 무역 수치 기준 수입 금지 대상 규모는 약 9억6700만 달러(1조3100억여원) 수준일 것으로 추산된다. 이 중 87%는 주류로, 캐나다 일부 주정부가 미국산 주류 판매를 거부한 데 대한 보복 조치라는 분석이 나온다.</p>
+<p>전문가 의견을 종합하면 수입 금지 규모가 양국 경제에 유의미한 타격을 주는 수준은 아니다. 다만 양국간 무역 갈등이 봉합되지 않고 악화 일로로 치닫는 상황에 대한 우려가 제기된다.</p>
+<p>스티븐 브라운 캐피털이코노믹스 수석경제학자는 &quot;수입 금지 대상이 캐나다의 대미 총 수출의 0.25%에 불과해 경제적 영향은 크지 않다&quot;면서도 &quot;이번 조치로 양국간 무역 긴장이 고조되면서 미국·멕시코·캐나다 자유무역협정(USMCA) 협상이 완전히 붕괴될 위험에 처했다&quot;고 짚었다.</p>
+<p>앞서 트럼프 대통령은 지난 7월20일 캐나다산 일부 제품에 대한 추가 관세 50% 부과 계획을 발표한 뒤 캐나다와 1개월간 정부간 협상을 벌였으나 최종 결렬됐다.</p>
+<p>트럼프 대통령은 이를 빌미로 지난달 22일부터 캐나다산 와인, 가구, 유제품, 시멘트, 의류 등 200억 달러(27조1500억여원) 상당의 상품에 최대 50% 관세를 부과했다.</p>
+<p>이에 캐나다는 지난 8일 200억 달러 상당의 미국산 상품 700여개 품목에 최대 50% 보복 관세를 매기며 정면으로 맞섰다.</p>
+<p>그러자 트럼프 대통령은 즉각 수입 금지를 꺼내들어 재보복에 나섰고, 캐나다는 유럽연합(EU) &#x27;준회원국&#x27; 가입을 언급하고 중국·인도와의 무역 협상을 가속화하며 탈(脫)미국을 시사하는 등 강대강 보복전이 지속되고 있다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/015/0005337125" target="_blank" rel="noopener">해 사라진 도쿄 34일째 &#x27;비&#x27;…140년 만에 무슨 일이</a></h3>
+      <p class="meta">한국경제 · 2026-09-29 14:47:11 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>1886년 이후 최장 기록</p>
+<p>일조시간도 역대 두 번째 최소</p>
+<p>일본 도쿄에서 한 달 넘게 하루도 빠짐없이 비가 내렸다. 여름 장마철도 아닌 가을 문턱에 세워진 이례적인 기록이다. 장기간 이어진 비로 9월 강수량은 평년의 3배 수준까지 불어났고, 일조시간은 역대 두 번째로 적은 수준으로 떨어졌다.</p>
+<p>29일 일본 기상청에 따르면 도쿄 지요다구의 도쿄 기준점에서는 지난달 27일부터 이날까지 34일 연속 강우가 관측됐다. 극히 적은 양의 비가 내린 날까지 포함해 하루도 빠짐없이 비가 기록된 것이다. 1886년 통계 작성 이후 가장 긴 연속 강우 기록이다.</p>
+<p>종전 기록은 2019년 6월 27일부터 7월 29일까지 이어진 33일이었다. 당시에는 본격적인 여름 장마 기간이었지만, 이번에는 여름에서 가을로 넘어가는 시기에 한 달 넘게 비가 이어졌다는 점에서 이례적이라는 평가다.</p>
+<p>장기간 비가 이어진 것은 가을비 전선이 서일본에서 동일본 태평양 연안을 따라 좀처럼 물러나지 않은 영향으로 분석된다. 따뜻하고 습한 공기가 전선으로 반복적으로 유입된 데다 24호, 25호, 26호 태풍이 잇따라 일본 열도 주변으로 접근하면서 비구름이 계속 발달했다.</p>
+<p>기상청은 이날도 가을비 전선이 혼슈 남쪽 해안에 정체하면서 도쿄 도심에서 아침부터 비가 내렸다고 전했다. JR도쿄역에서는 출근길 직장인과 여행객들이 우산을 쓴 채 발걸음을 재촉했다. 요코하마시에 사는 한 회사원은 “매일 습기가 심하고 기분까지 가라앉는다”며 “빨리 맑고 상쾌한 가을 날씨가 왔으면 좋겠다”고 말했다.</p>
+<p>숫자로도 유난히 축축했던 9월이 확인된다. 도쿄 도심의 이달 1~27일 누적 강수량은 621.5㎜로 평년의 약 3배에 달했다. 역대 9월 최대 강수량인 1958년의 670.9㎜에도 바짝 다가섰다.</p>
+<p>반대로 같은 기간 일조시간은 45.8시간에 그쳤다. 평년의 약 40% 수준으로 역대 두 번째로 적었다. 도쿄뿐 아니라 요코하마 등 간토 지방 곳곳에서도 비슷한 흐린 날씨가 이어졌다.</p>
+<p>태풍도 비를 거들었다. 지난주에는 25호 태풍 두쥐안이 도쿄와 간토 지역에 큰비를 뿌린 데 이어 26호 태풍 수리개가 일본 남쪽 해상에서 접근하고 있다. 수리개는 29일 오전 6시 기준 동북동 방향으로 이동 중이며 중심기압은 985헥토파스칼, 중심 부근 최대 풍속은 초속 30m다.</p>
+<p>일본 기상청은 수리개가 다음달 1일께 이즈제도 인근 해역을 통과한 뒤 2일께 일본 동쪽 해상으로 빠져나갈 것으로 전망했다. 혼슈 본토에 직접 미치는 영향은 크지 않을 것으로 예상된다.</p>
+<p>도쿄 등 간토 지방에는 30일에도 비가 예보돼 연속 강우 기록은 더 늘어날 가능성이 있다. 일본 기상청은 장마철에는 비가 이어지는 날이 적지 않지만, 여름에서 가을로 넘어가는 시기에 이처럼 장기간 비가 계속되는 것은 드문 현상이라고 설명했다.</p>
+<p>다만 다음달 1일 이후에는 가을비 전선의 정체가 차츰 해소되면서 간토 지방에서도 모처럼 햇볕을 볼 수 있는 날이 늘어날 전망이다. 한 달 넘게 우산을 놓기 어려웠던 도쿄 시민들에게도 비로소 ‘가을다운 가을’이 찾아올 것으로 보인다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/052/0002412568" target="_blank" rel="noopener">스페이스X 우주선 스타십, 첫 지구 궤도 진입 성공...V3 위성 26기 배치</a></h3>
+      <p class="meta">YTN · 2026-09-29 18:36:20 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>스타십, 첫 지구 궤도 진입 성공…위성 26기 배치</p>
+<p>이륙 과정에서 엔진 1기 예정보다 일찍 멈춰 &#x27;위기&#x27;</p>
+<p>V3 위성, V2 위성보다 10배 이상의 통신 역량 갖춰</p>
+<p>[앵커]</p>
+<p>미국 우주기업 스페이스X의 대형 우주선, 스타십이 처음으로 지구 궤도 진입에 성공했습니다.</p>
+<p>스페이스X는 스타십을 이용해 앞으로 달과 화성 유인 탐사 임무 등을 이어나갈 계획입니다.</p>
+<p>임늘솔 기자가 보도합니다.</p>
+<p>[기자]</p>
+<p>&quot;3, 2, 1&quot; 스페이스X의 대형 우주선 스타십이 불꽃과 연기를 내뿜으며 하늘로 솟아오릅니다.</p>
+<p>스페이스X는 현지 시각 28일 오전 7시 49분 미 텍사스주 스타 베이스 발사장에서 이륙해 시험 비행에 나섰습니다.</p>
+<p>목표는 로켓의 핵심 관문으로 꼽히는 궤도 진입.</p>
+<p>그런데 이륙 과정에서 스타십 랩터 엔진 6기 중 1기가 예정보다 일찍 작동을 멈추면서 위기가 발생했습니다.</p>
+<p>하지만 연구진은 비행 자료를 검토해 궤도 진입을 위한 핵심 엔진의 재점화가 가능하다고 판단했고 계획대로 비행을 이어갔습니다.</p>
+<p>그 결과, 스타십은 궤도 진입에 성공했고, 차세대 스타링크 V3 위성 26기를 궤도에 배치했습니다.</p>
+<p>스페이스X는 배치한 위성 모두 양호한 상태라며 순조롭게 작동하고 있다고 밝혔습니다.</p>
+<p>[박창수 / 한국항공우주연구원 차세대발사체개발 단장 : 스타링크 V3를 탑재하고 궤도상에 올려서 우주에서 분리를 시키고 실질적인 임무를 수행하겠습니다.]</p>
+<p>이제 스타십 자체가 운용 단계로 넘어갔다고 볼 수 있습니다.</p>
+<p>V3 위성은 기존 V2 위성보다 10배 이상의 통신 역량을 갖춘 것으로 알려졌습니다.</p>
+<p>스페이스X는 이를 바탕으로 스타링크의 통신 서비스 경쟁력을 높이고 매출 확대도 기대하고 있습니다.</p>
+<p>또, 스타링크 위성을 효율적으로 발사하고, 앞으로 달과 화성 유인 탐사 임무 등을 꾸준히 이어나갈 계획입니다.</p>
+<p>YTN 사이언스 임늘솔 입니다.</p>
+<p>영상편집 : 황유민</p>
+<p>※ &#x27;당신의 제보가 뉴스가 됩니다&#x27;</p>
+<p>[카카오톡] YTN 검색해 채널 추가</p>
+<p>[전화] 02-398-8585</p>
+<p>[메일] social@ytn.co.kr</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/056/0012264667" target="_blank" rel="noopener">선거 급한 트럼프 “아이오와에 사상 최대 제철소 건설”</a></h3>
+      <p class="meta">KBS · 2026-09-29 09:31:20 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>[앵커]</p>
+<p>미국 중간 선거를 한 달여 앞두고 바쁜 행보를 이어가고 있는 트럼프 대통령이 아이오와주에  최대 규모 제철소를 짓겠다고 발표했습니다.</p>
+<p>공화당 텃밭에서 경합지로 바뀌고 있는  지역 표심을 달래기 위한 것이란 평가가 나옵니다.</p>
+<p>워싱턴 김경수 특파원입니다.</p>
+<p>[리포트]</p>
+<p>트럼프 대통령이 미국 중서부 아이오와주에 인도계 다국적 기업의 계열사가 연간 천만 톤의 철강을 생산할 수 있는 대형 제철소를 짓기로 했다고 발표했습니다.</p>
+<p>투자 규모는 150억 달러, 우리 돈 20조 원 규모로 미네소타에서 채굴한 철광석으로 철강을 생산할 거라고 설명했습니다.</p>
+<p>트럼프 대통령은 특히 아이오와에 일자리 1,750개가 새로 생긴다고 강조했습니다.</p>
+<p>[도널드 트럼프/미국 대통령 : &quot;이 제철소는 세계에서도 큰 공장 중 하나이고, 미국 역사상 가장 큰 공장이 될 겁니다.&quot;]</p>
+<p>트럼프 대통령은  취임 직후 외국산 철강에 50% 관세를 부과한 점도 언급했습니다.</p>
+<p>이와 관련해 러트닉 상무장관은 이번 제철소 투자가 트럼프의 관세 정책 덕분이라고 강조했습니다.</p>
+<p>[하워드 러트닉/미국 상무장관 : &quot;이것이 바로 무역확장법 232조에 따른 철강 관세의 효과입니다. 그 관세가 없었다면 이 광산도, 이 제철소도 건설되지 못했을 겁니다.&quot;]</p>
+<p>아이오와주는 공화당 텃밭이었지만 고유가와 비료 가격 폭등 등으로 인해 현재 경합 지역으로 돌아서고 있다는 평가가 나옵니다.</p>
+<p>중간 선거를 한 달여 앞두고 나온 아이오와주 공장 건설 발표 자리에서 트럼프는 지역 상원의원 후보를 직접 소개하기도 했습니다.</p>
+<p>트럼프는 조만간 아이오와주를 직접 찾겠다고도 했습니다.</p>
+<p>한편, 트럼프는 미·중 정상회담에서 중국 측에 미국산 무기 구매를 제안했다는 주장과 관련해, 좋은 생각이지만 시진핑과 논의한 적은 없다고 부인했습니다.</p>
+<p>워싱턴에서 KBS 뉴스 김경수입니다.</p>
+<p>촬영:박은진/영상편집:안영아/자료조사:김대영</p>
+<p>■ 제보하기</p>
+<p>▷ 전화 : 02-781-1234, 4444</p>
+<p>▷ 이메일 : kbs1234@kbs.co.kr</p>
+<p>▷ 카카오톡 : &#x27;KBS제보&#x27; 검색, 채널 추가</p>
+<p>▷  유튜브, 다음에서도 KBS뉴스를 구독해주세요!</p></div></details>
+    </div>
+  </article>
+  </section>
+  <footer>이 브리핑은 네이버 뉴스 ‘언론사별 랭킹(많이 본 뉴스)’과 섹션 상위 기사를 바탕으로 자동 생성됐습니다. 각 기사의 저작권은 해당 언론사에 있으며, 원문 링크를 통해 출처를 확인할 수 있습니다. · 요약: 요약 없음 · <a class="foot-link" href="https://souljjab.github.io/news/archive/">지난 브리핑 모아보기</a></footer>
+</div>
+</body>
+</html>
