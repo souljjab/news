@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오늘의 뉴스 브리핑 · 2026-10-19</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F4EE; --card:#FFFFFF; --ink:#1C1A15; --sub:#756F63;
+  --rule:#DCD6C8; --seal:#B3261E; --steel:#2C3D5B; --wash:#F9F7F1;
+  --down:#1B5FA8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  font-size:15.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:840px;margin:0 auto;padding:40px 20px 72px}
+.masthead{display:flex;align-items:center;gap:18px}
+.archive-link{margin-left:auto;flex:0 0 auto;align-self:center;
+  display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+  border:1px solid var(--rule);border-radius:20px;background:var(--card);
+  color:var(--steel);font-size:12.5px;font-weight:500;padding:7px 14px;
+  transition:border-color .15s,color .15s}
+.archive-link:hover{border-color:var(--steel);color:var(--ink)}
+.foot-link{color:var(--steel)}
+@media(max-width:520px){
+  .masthead{flex-wrap:wrap}
+  .archive-link{margin-left:74px;margin-top:-4px}
+}
+.seal{flex:0 0 auto;width:64px;height:64px;border:2px solid var(--seal);
+  color:var(--seal);display:flex;flex-direction:column;align-items:center;
+  justify-content:center;font-family:'Noto Serif KR',serif;line-height:1.05}
+.seal span{font-size:12px;letter-spacing:2px}
+.seal b{font-size:27px;font-weight:900}
+.eyebrow{margin:0;font-size:11px;letter-spacing:3.5px;color:var(--sub)}
+.masthead h1{margin:2px 0 4px;font-family:'Noto Serif KR',serif;
+  font-weight:900;font-size:31px;letter-spacing:-.5px}
+.mast-meta{margin:0;font-size:13px;color:var(--sub)}
+.double-rule{margin:20px 0 6px;border-top:3px solid var(--ink);
+  border-bottom:1px solid var(--ink);height:3px}
+.notice{font-size:12.5px;color:var(--sub);margin:8px 0 22px}
+.market{border:1px solid var(--rule);border-radius:6px;background:var(--card);
+  padding:16px 18px 14px;margin:0 0 8px}
+.market h2{margin:0 0 12px;font-family:'Noto Serif KR',serif;font-size:15px;
+  font-weight:700;display:flex;align-items:center;gap:8px}
+.market h2 .tick{width:9px;height:9px;background:var(--steel);flex:0 0 auto}
+.market h2 em{font-style:normal;font-weight:400;font-size:11.5px;
+  color:var(--sub);margin-left:auto}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.q{border:1px solid var(--rule);border-radius:4px;background:var(--wash);
+  padding:10px 12px}
+.q-name{margin:0 0 3px;font-size:12px;color:var(--sub)}
+.q-price{margin:0;font-family:'Noto Serif KR',serif;font-size:19px;
+  font-weight:700;letter-spacing:-.3px}
+.q-chg{margin:2px 0 0;font-size:12.5px;font-weight:500}
+.q-chg.up{color:var(--seal)}
+.q-chg.down{color:var(--down)}
+.q-chg.flat{color:var(--sub)}
+.market-note{margin:11px 0 0;font-size:11.5px;color:var(--sub)}
+.sec{margin:44px 0 0}
+.sec-title{display:flex;align-items:baseline;gap:10px;margin:0 0 16px;
+  font-family:'Noto Serif KR',serif;font-size:21px;font-weight:700}
+.sec-title .tick{width:11px;height:11px;background:var(--seal);
+  flex:0 0 auto;align-self:center}
+.sec-title em{font-style:normal;font-weight:400;font-size:12.5px;
+  color:var(--sub);margin-left:auto}
+.card{display:flex;gap:16px;background:var(--card);border:1px solid var(--rule);
+  border-radius:6px;padding:20px 22px;margin:0 0 14px}
+.rank{flex:0 0 auto;width:34px;height:34px;border:1.5px solid var(--seal);
+  border-radius:50%;color:var(--seal);display:flex;align-items:center;
+  justify-content:center;font-family:'Noto Serif KR',serif;font-size:17px;
+  font-weight:700;margin-top:2px}
+.card-body{min-width:0;flex:1}
+.card h3{margin:0 0 6px;font-family:'Noto Serif KR',serif;
+  font-size:18.5px;font-weight:700;line-height:1.45;letter-spacing:-.2px}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--seal);text-decoration:underline}
+.meta{margin:0 0 12px;font-size:12.5px;color:var(--sub)}
+.chip{display:inline-block;border:1px solid var(--rule);border-radius:3px;
+  padding:1px 7px;font-size:11.5px;color:var(--steel);background:var(--wash)}
+.chip.src{color:var(--sub)}
+.summary{background:var(--wash);border-left:3px solid var(--steel);
+  padding:12px 15px;border-radius:0 4px 4px 0}
+.summary .cap{display:block;font-size:11px;letter-spacing:2px;
+  color:var(--steel);margin-bottom:4px}
+.summary p{margin:0;font-size:14.5px}
+details{margin-top:12px}
+summary{cursor:pointer;font-size:13px;color:var(--steel);
+  font-weight:500;user-select:none}
+summary:hover{color:var(--seal)}
+.orig{margin-top:10px;padding:14px 16px;border:1px dashed var(--rule);
+  border-radius:4px;font-size:14px;color:#39362E;max-height:460px;overflow:auto}
+.orig p{margin:0 0 10px}
+footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:12px;color:var(--sub)}
+@media (max-width:560px){
+  .wrap{padding:26px 14px 56px}
+  .masthead h1{font-size:24px}
+  .card{padding:16px 14px;gap:12px}
+  .sec-title em{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="seal"><span>10월</span><b>19</b></div>
+    <div>
+      <p class="eyebrow">NAVER NEWS · DAILY BRIEFING</p>
+      <h1>오늘의 뉴스 브리핑</h1>
+      <p class="mast-meta">2026-10-19 (월) 21:02 기준 · 전체 TOP 5 + 정치·경제·사회·IT/과학·세계 각 4건 · 중복 기사 없음</p>
+    </div>
+    <a class="archive-link" href="https://souljjab.github.io/news/archive/">지난 브리핑 &rarr;</a>
+  </header>
+  <div class="double-rule"></div>
+  <p class="notice">AI 요약 없이 기사 원문을 그대로 실었습니다.</p>
+  <section class="market">
+    <h2><span class="tick"></span>오늘의 시세<em>환율 · 국내외 종목</em></h2>
+    <div class="qgrid">
+      <div class="q"><p class="q-name">원/달러 환율</p><p class="q-price">1,330.32원</p><p class="q-chg down">▼ 3.81 (-0.29%)</p></div>
+      <div class="q"><p class="q-name">삼성전자</p><p class="q-price">223,500원</p><p class="q-chg up">▲ 8,000 (+3.71%)</p></div>
+      <div class="q"><p class="q-name">SK하이닉스</p><p class="q-price">1,304,000원</p><p class="q-chg up">▲ 32,000 (+2.52%)</p></div>
+      <div class="q"><p class="q-name">SOXL</p><p class="q-price">$102.09</p><p class="q-chg up">▲ 8.42 (+8.99%)</p></div>
+      <div class="q"><p class="q-name">NNE</p><p class="q-price">$12.95</p><p class="q-chg up">▲ 0.07 (+0.54%)</p></div>
+    </div>
+    <p class="market-note">종가 기준입니다. 국내 종목·환율은 직전 거래일 종가, 미국 종목은 가장 최근 미국 장 마감가입니다. 출처: 네이버 금융 · 야후 파이낸스</p>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🔥 전체 인기 TOP 5<em>카테고리 무관 · 언론사별 랭킹 상위</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/277/0005830226" target="_blank" rel="noopener">&quot;사전 주문 시 내년 1월 말 수령&quot;…아이폰 듀오 &#x27;매진&#x27; 이유 있었다</a></h3>
+      <p class="meta">아시아경제 · 2026-10-19 10:43:32 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>초기 공급량 제한…내년 초까지 품귀현상 전망</p>
+<p>애플의 첫 폴더블 스마트폰 &#x27;아이폰 듀오&#x27;가 사전예약 품귀현상을 나타낸 것은 초기 물량 수급이 원활하지 못한 영향이 컸다. 물량 문제의 해결이 어려워 내년 초까지 품귀 현상이 계속될 것이란 전망이 나오고 있다.</p>
+<p>19일 IT 업계에 따르면 이날 오전 기준 온라인 애플스토어에서 아이폰 듀오의 모든 모델은 내년 1월22일부터 출고된다고 안내되고 있다. 지금 당장 주문하더라도 3개월이 지난 뒤에야 제품을 받아볼 수 있다는 의미다. 제품의 색상과 저장공간에 상관없이 출고 지연 현상이 빚어지고 있다.</p>
+<p>품귀 현상은 아이폰 듀오를 구매하기 위한 수요를 초도물량 공급이 따라가지 못하면서 발생했다. 지난 16일 오후 9시 온라인 애플스토어를 통해 진행된 국내 사전예약 개시 1시간여 만에 제품 수령 기간이 올해 말로 안내되기 시작했다. 미국 등 전 세계 1차 출시국에서 진행된 사전예약 역시 비슷한 현상이 벌어졌다.</p>
+<p>이동통신 3사의 사전예약 역시 1차가 일찌감치 마감돼 2~3차 접수가 진행 중이다. 자급제 단말기의 사전예약을 진행한 쿠팡, 네이버플러스 스토어 등 e커머스에서도 판매 개시 후 몇 분 만에 제품이 동나면서 예약구매가 마감됐다.</p>
+<p>300만원을 웃도는 높은 가격이 책정됐음에도 애플의 첫 폴더블 스마트폰이라는 상징성에 충성 고객들이 몰렸다. 여기에 초도 물량 부족까지 겹치면서 중고거래를 포함한 온라인 플랫폼에서는 출시 당일 바로 받아볼 수 아이폰 듀오가 프리미엄이 붙은 채 거래되고 있다.</p>
+<p>아이폰 듀오는 까다로운 조립 공정의 영향으로 생산량이 제한된 것으로 알려졌다. 외신 보도를 종합하면 대만 폭스콘의 아이폰 듀오 조립공정 수율은 60% 초반대에 머무르고 있다. 국내에 공급된 아이폰 듀오의 물량 역시 기존 플래그십 스마트폰 대비 현저히 적은 것으로 알려졌다. 아이폰 듀오는 오는 23일 우리나라를 포함한 1차 출시국에서 출시될 예정이다.</p>
+<p>업계는 적어도 내년 1분기까지 품귀 현상이 이어질 것이라고 보고 있다. 애플은 미국 경제매체 CNBC를 통해 &quot;이 혁신적인 신제품을 최대한 빠르게 고객들에게 전달하기 위해 노력하고 있으며, 온라인 주문은 계속해서 받을 예정&quot;이라고 밝혔다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/056/0012275821" target="_blank" rel="noopener">젤렌스키 “미국, 푸틴과 3자 회담 제안…12월 G20 회의 때 만날 수도”</a></h3>
+      <p class="meta">KBS · 2026-10-18 18:03:06 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>미국이 러시아, 우크라이나 정상이 만나는 3자 회담을 추진하고 있다고 볼로디미르 젤렌스키 우크라이나 대통령이 밝혔습니다.</p>
+<p>젤렌스키 대통령은 현지 시각 18일 소셜미디어에 “미국이 푸틴과 회담을 추진하고 있으며 3자 회담을 제안했다”고 썼습니다. 그러면서 “이 회담은 중동 국가 중 한 곳에서 열릴 수 있다”며 “미국은 항상 아랍에미리트(UAE)나 사우디아라비아를 회담 장소로 거론해 왔다”고 말했습니다.</p>
+<p>그는 오는 12월 주요 20개국(G20) 정상회의 기간에 미국에서 회담이 열리거나 유럽 국가에서도 열릴 수 있다고 덧붙였습니다.</p>
+<p>하지만 “아직 러시아와 미국 어느 쪽에서도 확답은 없었다”고 밝혔습니다.</p>
+<p>젤렌스키 대통령은 블라디미르 푸틴 러시아 대통령과 정상회담을 수차례 제안해 왔지만, 러시아 측은 회담 장소를 러시아로만 고집하면서 사실상 제안을 거부해 왔습니다.</p>
+<p>이번 미국의 3자 회담 제안은 우크라이나의 러시아 정유시설 공격을 두고 양측이 갈등하는 과정에서 나왔습니다.</p>
+<p>트럼프 대통령은 일방적으로 에너지 휴전을 발표하고 제재 대상인 러시아산 경유를 미국과 세계시장에 공급하겠다는 ‘경유딜’을 깜짝 발표했습니다.</p>
+<p>중간선거를 앞두고 유가 상승으로 악화한 민심을 달래기 위한 것이었지만 우크라이나 측이 러시아 정유시설 공격을 재개하면서 양측 관계는 최악으로 치달았습니다.</p>
+<p>젤렌스키 대통령은 “미국 대통령이 에너지 휴전을 발표한 뒤 일주일 동안 러시아는 우크라이나의 에너지·석유·가스 부문을 76차례 공격했다”고 주장했습니다.</p>
+<p>그러면서 “미국과의 협상은 계속될 것”이라며 “우리는 미국이 푸틴에게 더 많은 압박을 가하기를 기대한다”고 강조했습니다.</p>
+<p>[사진 출처 : 로이터=연합뉴스]</p>
+<p>■ 제보하기</p>
+<p>▷ 전화 : 02-781-1234, 4444</p>
+<p>▷ 이메일 : kbs1234@kbs.co.kr</p>
+<p>▷ 카카오톡 : &#x27;KBS제보&#x27; 검색, 채널 추가</p>
+<p>▷  유튜브, 다음에서도 KBS뉴스를 구독해주세요!</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/014/0005591399" target="_blank" rel="noopener">차량센서가 놓친 위험까지 포착... 퀄컴 교통안전기술 &#x27;V2X&#x27; 주목</a></h3>
+      <p class="meta">파이낸셜뉴스 · 2026-10-19 18:33:11 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>솔루션 시연… 김상표 사장 연설도</p>
+<p>차량의 카메라나 레이더에 잡히지 않는 사각지대의 위험까지 미리 파악해 교통사고를 예방하는 기술이 주목받고 있다. 차량과 도로 시설물, 보행자 등이 실시간으로 정보를 주고받아 운전자에게 위험 상황을 사전에 알려주는 차량·사물 간 통신(V2X) 기술이다.</p>
+<p>퀄컴 테크날러지스는 19일 강릉에서 개막한 &#x27;2026 지능형교통체계(ITS) 세계총회&#x27;에서 이 같은 기술을 활용한 교통 안전 솔루션을 선보인다고 밝혔다.</p>
+<p>오는 23일까지 강릉 올림픽파크에서 열리는 ITS 총회는 각국 정부와 산업계, 학계 관계자 및 기술 전문가가 모여 지능형 교통체계의 정책과 기술, 서비스를 논의하는 국제 행사다. 올해는 &#x27;이동성을 넘어 하나 되는 세계&#x27;를 주제로, 차량 연결 기술과 자율주행, 스마트 인프라·교통 관리, 모빌리티 서비스, 인공지능(AI)·데이터 기반 시스템, 정책·거버넌스·표준 등이 주요 의제로 다뤄진다.</p>
+<p>퀄컴은 이번 행사에서 총 7개 시연을 통해 V2X 기술의 활용 가능성을 소개한다. 확장형 V2X와 첨단운전자보조시스템(ADAS) 기반 V2X, 스마트 도로 인프라, 글로벌 V2X 기술 등이 주요 전시 분야다. 퀄컴의 솔루션과 제품을 탑재한 협력사 제품도 함께 선보인다.</p>
+<p>특히 V2X가 기존 차량 센서의 한계를 어떻게 보완할 수 있는지에 초점을 맞췄다. 차량이 자체 센서로 주변 환경을 인식하는 데 그치지 않고 도로 인프라와 다른 도로 이용자로부터 정보를 전달받아 위험 상황을 보다 폭넓게 파악하도록 하는 방식이다. 이를 통해 교통 안전뿐 아니라 차량 흐름과 도로 운영의 효율성을 높이는 데도 활용할 수 있다는 설명이다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/008/0005428324" target="_blank" rel="noopener">올해 이휘소상에 크리스토퍼 자진스키 美 메릴랜드대 교수</a></h3>
+      <p class="meta">머니투데이 · 2026-10-19 14:00:00 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>2026년도 이휘소상 수상자에 &#x27;자진스키 등식&#x27;을 고안한 물리학자 크리스토퍼 자진스키 미국 메릴랜드대 석좌교수가 선정됐다.</p>
+<p>과학기술정보통신부와 재단법인 아시아태평양이론물리센터는 19일 이휘소상 선정 결과를 발표했다.</p>
+<p>이휘소상은 한국을 대표하는 세계적 이론물리학자인 고(故) 이휘소 박사의 업적을 기리고자 아태이론물리센터와 한국물리학회가 공동으로 제정한 상이다. 매년 추계 한국물리학회에서 시상식을 개최한다.</p>
+<p>올해 수상자로 선정된 자진스키 교수는 통계물리학 및 비평형 열역학 분야의 세계적 권위자다. 자연 속의 무분별한 불균형 상태에서 가장 균형 잡힌 상태의 기준값(자유에너지 차이)을 찾아내는 수학 공식인 &#x27;자진스키 등식(Jarzynski equality)&#x27;를 고안했다.</p>
+<p>또 우주의 무질서(엔트로피)는 항상 증가하는 방향으로 진행한다는 &#x27;열역학 제2법칙&#x27;을 거스르는 현상이 얼마만큼의 확률로 발생할 수 있는지 정리한 &#x27;요동정리&#x27;도 자진스키 교수의 업적이다.</p>
+<p>아태이론물리센터는 19일부터 20일까지 자진스키 교수를 포스텍(포항공대)에 초청해 특별강연을 개최할 예정이다. 아울러 21일 한국물리학회 추계 학술대회에서는 &#x27;열역학 법칙을 미시세계로 확장하기&#x27;를 주제로 기조강연한다.</p>
+<p>윤경숙 과기정통부 기초원천연구정책관은 &quot;이번 행사는 한국 기초과학의 미래를 견인할 젊은 과학자의 지적 탐구심을 고취하고, 연구에 대한 새로운 비전을 제시해 줄 것&quot;이라고 말했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">5</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/001/0016386337" target="_blank" rel="noopener">마크롱 집권말기에 치명타…지지율 폭락 속 치안붕괴 굴욕</a></h3>
+      <p class="meta">연합뉴스 · 2026-10-19 15:30:19 &nbsp;<span class="chip">전체</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>&#x27;종말론적 광경&#x27; 책임론…레임덕·지지율 집권 후 최저 15%</p>
+<p>대선 앞 극우 르펜 반사이익…내무장관 사의 반려·대책 지시</p>
+<p>(서울=연합뉴스) 신재우 기자 = 에마뉘엘 마크롱 프랑스 대통령이 지지율 추락으로 레임덕에 시달리는 가운데 수년 만에 최악의 폭동 사태까지 터지면서 집권 말기 최대 위기에 직면했다.</p>
+<p>정부가 대규모 시위가 예고됐는데도 치안 유지에 실패했다는 비판이 거세지면서 내년 대통령 선거를 앞두고 극우 진영이 반사이익을 얻고 있다는 분석이 나온다.</p>
+<p>18일(현지시간) 파이낸셜타임스(FT) 등에 따르면 마크롱 대통령과 세바스티앵 르코르뉘 총리는 전날 프랑스 전역에서 전날 벌어진 대규모 폭동으로 거센 정치적 역풍에 휩싸였다.</p>
+<p>교육 여건 개선을 요구하는 학생들과 고물가에 분노한 시민들이 거리로 쏟아져 나온 가운데 검은 옷과 복면을 착용한 폭도들이 상점을 약탈하고 건물에 불을 질렀다.</p>
+<p>전국적으로 약 1천500개 상점이 약탈당했으며 릴과 마르세유, 리모주 등에서는 시청 건물이 공격받았다. 리모주 시청사는 방화로 파괴됐다.</p>
+<p>경찰과 소방관 약 1천명이 충돌 과정에서 다쳤고, 체포된 인원은 2천400명에 육박했다.</p>
+<p>이에 정부가 시위 규모를 과소평가해 경찰력을 충분히 배치하지 않았다는 비판이 쏟아지고 있다.</p>
+<p>정보기관은 10만명 정도가 시위에 참여할 것으로 예상했지만 실제로는 그 5배인 50만명이 거리로 나왔다.</p>
+<p>야당 정치인들은 투입된 경찰이 1만명에 불과했다고 주장하며, 2018∼2019년 마크롱 집권 1기를 뒤흔든 &#x27;노란 조끼&#x27; 시위 당시 경찰이 최대 6만명 이상 동원됐던 것과 대조적이라고 지적하고 있다.</p>
+<p>이번 사태는 이미 정치적 입지가 크게 흔들리고 있는 마크롱 대통령에게 다시금 치명타가 될 것으로 보인다.</p>
+<p>여론조사기관 입소스가 폭동 발생 전 실시한 여론조사에서 마크롱 대통령의 지지율은 15%로, 2017년 첫 집권 이후 최저 수준으로 추락했다.</p>
+<p>소수정부를 이끄는 마크롱 대통령은 예산안을 둘러싼 정치적 갈등과 금융시장 불안, 수주간 이어진 고등학생들의 시위로 이미 궁지에 몰린 상태였다.</p>
+<p>파리정치대학 시앙스포의 정치학자 브뤼노 코트르는 &quot;이번 대중의 분노 폭발은 &#x27;노란 조끼&#x27; 사태의 가장 암울했던 시기를 강하게 떠올리게 한다&quot;고 평가했다.</p>
+<p>그는 &quot;토요일의 종말론적 광경은 국가가 더 이상 나라를 통제하지 못한다는 인상을 줬다&quot;며 &quot;이는 유권자들의 투표 행태에 영향을 미칠 수 있는 중대한 경험&quot;이라고 분석했다.</p>
+<p>이번 폭동의 정치적 최대 수혜자로는 극우 국민연합(RN)을 이끄는 마린 르펜이 꼽힌다.</p>
+<p>내년 대선을 6개월 앞두고 여론조사에서 선두를 달리고 있는 르펜은 이번 사태를 계기로 정부의 무능을 집중적으로 부각하고 있다.</p>
+<p>그는 &quot;우리 나라는 폭력과 무기력 사이에 갇혀 있다&quot;고 비판했으며, 국민연합은 마크롱 정부가 초래한 &#x27;혼란&#x27;을 끝내고 &quot;질서를 회복하겠다&quot;고 밝혔다.</p>
+<p>정치적 위기가 고조되자 마크롱 대통령은 사태 수습에 나섰다.</p>
+<p>그는 18일 밤 TV 연설에서 학생과 노동조합 지도자, 의원들이 참여하는 협의체를 구성해 구체적인 해결책을 마련하고 향후 시위에 대비한 치안 대책도 개선하겠다고 약속했다.</p>
+<p>그러나 FT는 이번 폭동이 마크롱 대통령의 집권 말기 권력 누수를 더욱 심화하는 악재가 됐다고 진단했다.</p>
+<p>치안 실패에 대한 책임론이 불거진 가운데 마크롱 대통령은 19일 사의를 표명한 로랑 누녜스 내무장관의 사표를 수리하지 않았다고 로이터통신이 보도했다.</p>
+<p>엘리제궁은 마크롱 대통령이 경찰과 치안 당국의 지휘체계 유지를 위해 누녜스 장관을 유임시키기로 했으며, 약탈 행위에 대응하기 위한 새로운 방안을 최대한 신속하게 마련하라고 지시했다고 밝혔다.</p>
+<p>withwit@yna.co.kr</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🔬 IT/과학 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/029/0003053935" target="_blank" rel="noopener">롯데이노베이트 &quot;기술 연결해 이동 혁신&quot;… 모빌리티 분야 주력 사업으로 키운다</a></h3>
+      <p class="meta">디지털타임스 · 2026-10-19 17:22:47 &nbsp;<span class="chip">IT/과학</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>통합 모빌리티 솔루션 기업 도약 선언</p>
+<p>말레이시아·멕시코 등 글로벌도 노크</p>
+<p>&quot;모빌리티 사업을 2030년까지 회사 성장을 이끌 분야로 육성하겠다.&quot;</p>
+<p>김경엽 롯데이노베이트 대표는 19일 &#x27;2026 강릉 ITS 세계총회&#x27; 현장에서 열린 기자간담회에서 모빌리티 사업의 핵심으로 &#x27;연결성&#x27;을 꼽았다. 도로와 차량, 교통 데이터를 인공지능(AI)으로 연결해 이동의 안전성과 편의성을 높이겠다는 것이다. 롯데이노베이트는 국내 교통 인프라 구축·운영 경험을 바탕으로 AI 스마트톨링의 해외 진출을 추진하고, 개별 솔루션을 통합 플랫폼으로 발전시킬 계획이다.</p>
+<p>당장 해외 시장 공략에 앞세운 기술은 AI 영상 인식 기반 스마트톨링이다. 차량이 요금소에서 멈추지 않고 통과하면 번호판을 인식해 통행료를 부과하는 방식이다. 여러 차로의 차량을 동시에 처리해야 하는 만큼 번호판 인식 성능이 중요하다.</p>
+<p>윤태은 롯데이노베이트 모빌리티부문장은 &quot;여러 가지 경우의 수를 다 소스를 구해서 학습을 한다는 건 사실 불가능에 가깝다&quot;라며 생성형 AI를 활용한 학습 방식을 설명했다. 날씨가 나쁘거나 번호판이 찌그러지고 흙이 묻은 상황을 이미지로 생성해 AI를 훈련하는 것이다.</p>
+<p>회사 측은 AI 차량영상촬영장치 909대를 전국 고속도로에 설치했다고 밝혔다. 김 대표는 올해 말 추가 도입분을 포함한 내부 연구개발용 그래픽처리장치(GPU) 투자 규모가 약 300억원이라고 설명했다. 번호판 인식 등 여러 사업의 AI 학습·추론에 활용하는 인프라다.</p>
+<p>수출 대상으로는 차단시설 없이 여러 차로를 달리는 차량의 통행료를 자동으로 걷는 &#x27;MLFF&#x27; 도입을 검토하는 국가들을 보고 있다. 김 대표는 대상 국가를 정하기 이전에 사업 자금을 댈 민간 기업이나 은행에 제안하며 사업을 만들고 있다고 설명했다. 윤 부문장은 교통 시스템 사업에는 해당국 정책과 예산이 뒷받침돼야 한다며 대외경제협력기금(EDCF) 사업과 민간 투자 기회를 살피고 있다고 했다. 현재 말레이시아와 멕시코에서 일부 협의가 진행 중이며, 수주가 확정된 단계는 아니다.</p>
+<p>김 대표는 해외에서 논의하는 MLFF 사업 규모가 수천억원대라며 성장 가능성에 주목했다. 모빌리티를 2030년까지 회사 성장을 이끌 사업으로 육성한다는 구상이다. 윤 부문장도 &quot;솔루션 등을 수출하는 데에 경쟁력을 충분히 갖췄다&quot;며 이번 총회를 해외 고객에게 기술을 알리는 계기로 삼겠다고 말했다.</p>
+<p>중장기적으로는 스마트톨링과 차세대 지능형교통체계(C-ITS), 자율주행을 묶는 &#x27;AI 모빌리티 시티&#x27;로 사업을 넓힌다. 도로에서 수집한 정보를 AI로 분석해 교통·위험 상황을 예측하고, 도시 운영과 시민 서비스에 활용하는 구상이다. 화성 자율주행 리빙랩과 익산 자율주행 스마트플랫폼 등의 사업 경험을 기반으로 삼는다.</p>
+<p>현재 광주에서는 차량 시야의 사각지대 정보와 보행자 신호, 객체·예측 경로 정보를 제공하는 C-ITS 서비스 3종을 개념검증(PoC)하고 있다. 도로 인프라가 차량에 보이지 않는 보행자 등을 감지해 위험을 알리는 방식이다.</p>
+<p>자율주행은 차량 판매보다 목적에 맞는 서비스에 초점을 맞췄다. 자율주행 셔틀 &#x27;무부(MUVU)&#x27;는 6년간 9개 지역에서 누적 11만㎞를 주행하고 4만명을 태웠다. 자체 인지·관제 기술에 완성차 업체와 기술 파트너의 역량을 결합해 차종을 늘리고, 이동형 무인점포와 의료·헬스케어, 방범·순찰 등으로 확장할 계획이다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/005/0001879574" target="_blank" rel="noopener">지스타서 ‘2026 게임문화축제’… 붉은사막·오버워치 세계관 체험</a></h3>
+      <p class="meta">국민일보 · 2026-10-19 18:21:10 &nbsp;<span class="chip">IT/과학</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>다음 달 19~22일 부산 벡스코에서 열리는 ‘지스타 2026’ 기간에 제2전시장에서 ‘2026 게임문화축제’가 열린다. 문화체육관광부와 한국콘텐츠진흥원이 주최하는 축제로 올해 6회째다. 슬로건은 ‘플레이 케이(PLAY K): 한국을 플레이하다’다.</p>
+<p>전시는 4개 테마로 꾸며진다. 펄어비스 ‘붉은사막’의 ‘회색갈기 캠프’에서는 활쏘기 등 게임 속 모험을, ‘오버워치’ 공간에서는 부산 전장과 한국 출신 영웅 ‘디바’를 소재로 한 작전을 체험한다. 넷마블 ‘몬길: STAR DIVE’의 ‘범골마을’과 네오위즈 ‘안녕서울: 이태원편’ ‘산나비: 귀신 씌인 날’ 체험 공간도 마련된다.</p>
+<p>개막일에는 게임 OST를 국악으로 재해석한 ‘K-사운드 스테이지’ 공연이 열린다. 부산국립국악원이 ‘배틀그라운드’ ‘아이온’ ‘P의 거짓: 서곡’ 음악을 연주하고, 걸그룹 도드리와 싱어송라이터 안예은이 무대에 오른다. 도드리는 몬길 ‘푸른 바람’ 편곡 버전을 처음 공개한다.</p>
+<p>SOOP과 함께하는 아마추어 발로란트 대회 ‘GCF e스포츠 리그’도 열린다. 만 15세 이상 5인 1팀으로 오는 22일부터 SOOP ‘GGGL’에서 신청을 받는다. 다음 달 14일 온라인 예선을 거쳐 21일 해운대 T1 베이스캠프에서 총상금 500만원을 놓고 본선을 치른다. 축제는 지스타 입장권이 있으면 추가 비용 없이 즐길 수 있다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/008/0005428624" target="_blank" rel="noopener">방미통위, 유진이엔티 청문 주재자 기피신청 인용</a></h3>
+      <p class="meta">머니투데이 · 2026-10-19 21:14:30 &nbsp;<span class="chip">IT/과학</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>유진이엔티(주) 청문 주재자 기피 신청이 인용됐다.</p>
+<p>19일 방송미디어통신위원회는 서면으로 진행된 제43차 위원회 회의 결과 유진이엔티㈜가 신청한 청문 주재자 기피신청을 인용했다고 밝혔다.</p>
+<p>또 청문 관련 당사자의 문서·복사 열람 요청을 제한적으로 허용하고, 청문 주재자가 증거 조사 여부를 결정하기로 했다. 청문 기일 변경 요청은 행정절차법에 별도 규정이 없어 공문으로 처리하기로 했다.</p>
+<p>당초 방미통위는 유진이엔티의 YTN 최대주주 변경승인 처분을 둘러싼 적법성 여부를확인하기 위해 오는 21일 유진이엔티를 상대로 청문을 진행할 예정이었다. 청문에서 나오는 결과를 토대로 직권취소 여부를 판단할 계획이었다.</p>
+<p>그러나 유진이엔티가 신청한 청문 주재자 기피신청이 받아들여지면서 청문 주재자를 재선정하는 작업에 착수하게 된다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/092/0002441537" target="_blank" rel="noopener">머스크 &quot;미국 모든 어린이에 스페이스X 1주씩&quot;</a></h3>
+      <p class="meta">지디넷코리아 · 2026-10-19 22:26:17 &nbsp;<span class="chip">IT/과학</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>&quot;내년에 선물&quot; 공약…실행 땐 14조원 규모</p>
+<p>일론 머스크가 내년에 미국 내 모든 어린이들에게 스페이스X 주식 최소 한 주를 줄 계획이라고 공언했다고 CNBC가 19일(현지시간) 보도했다.</p>
+<p>미국 증권거래위원회(SEC) 공시 자료에 따르면 머스크는 현재 스페이스X 주식 48억 주를 보유하고 있다. 미부여 주식과 스톡옵션까지 포함할 경우 머스크의 스페이스X 주식은 64억 주에 달한다.</p>
+<p>2025년 7월 1일 기준 미국 내 18세 이하 어린이는 7200만 명 수준이다.</p>
+<p>지난 주 금요일인 16일 스페이스X의 종가는 146.03달러였다. 따라서 18세 이하 어린이들에게 한 주씩 나눠줄 경우 총 105억 달러(약 14조원)를 기부하게 된다.</p>
+<p>일론 머스크  (사진=xAI 라이브 캡처)</p>
+<p>머스크는 이날 자신의 엑스를 통해 &quot;이것은 앞으로 있을 수많은 기부 중 첫 번째가 될 것&quot;이라고 말했다. 하지만 그는 구체적으로 어떤 방식으로 주식을 나눠줄 지는 공개하지 않았다.</p>
+<p>테슬라 CEO이기도 한 일론 머스크는 지난 7월 이후 공화당 그룹에 총 2억7600만 달러 이상 기부했다. 덕분에 머스크는 2026년 중간선거 최대 기명 기부자로 이름을 올렸다.</p>
+<p>블룸버그 자료에 따르면 머스크의 순 자산은 현재 9천억 달러(1천196조원) 수준에 이른다. 머스크의 자산 중 스페이스X 주식은 7000억 달러로 절대 비중을 차지하고 있다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🌍 세계 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/056/0012275939" target="_blank" rel="noopener">반트럼프 시위 확산…대러 제재 완화, 공화당도 ‘반발’</a></h3>
+      <p class="meta">KBS · 2026-10-19 06:34:31 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>[앵커]</p>
+<p>중간선거를 2주 남짓 앞둔  미국 전역에서 트럼프 대통령 반대 시위가  동시다발적으로 열렸습니다.</p>
+<p>녹록지 않은 민심에 트럼프 대통령이 대러 제재 완화를 통해  막판 표심 잡기에 나서면서, 공화당 내부에서도 반발이 나오고 있습니다.</p>
+<p>뉴욕 우정화 특파원입니다.</p>
+<p>[리포트]</p>
+<p>[&quot;트럼프를 투표로 몰아내자!&quot;]</p>
+<p>트럼프 대통령에 반대하는  유권자들이 거리로 나왔습니다.</p>
+<p>투표에 참여해 트럼프를 심판하자는 &#x27;노 킹스&#x27; 시위대입니다.</p>
+<p>미국 50개 주에서  2천여 건의 행사가 진행됐습니다.</p>
+<p>[스테이시 팔로토/&#x27;노 킹스&#x27; 집회 운영진 : &quot;현 정부에 대한 불만과 실망이 매우 큽니다.&quot;]</p>
+<p>트럼프 지지율은 33%, 역대 최저치 기록을 또 갈아치웠습니다.</p>
+<p>민심이 계속 돌아서면서  트럼프 대통령은 대러 제재를 완화해  막판 뒤집기를 시도하고 있습니다.</p>
+<p>러시아 경유 공급을 늘려  미국 내 기름값을 낮추려는 겁니다.</p>
+<p>트럼프 대통령은 러시아산 에너지 구매국 등에 최고 100%의 관세 부과를  면제하는 내용의 행정명령에도  이미 서명했습니다.</p>
+<p>[도널드 트럼프/미국 대통령 : &quot;(대러시아 제재 완화는) 아주 좋은 결정입니다. 미국에 이로운 것이고, 세계에도 좋은 결정이라고 생각합니다.&quot;]</p>
+<p>트럼프의 특사들은 유럽 측에 러시아산 가스 구매 재개도 제안한 걸로 알려졌습니다.</p>
+<p>하지만, 러시아의 자금줄을  늘릴 수 있다는 우려가  공화당에서도 나오고 있습니다.</p>
+<p>[달린 그레이엄/미 공화당 상원의원 : &quot;러시아를 압박해서 전쟁을 끝내고 휘발윳값을 낮추는 쪽을 택하겠습니다. 푸틴도, 러시아도 믿지 않기 때문입니다.&quot;]</p>
+<p>중간선거 패색이 짙어지면서 트럼프가 선거 관리를 못하고 있다며 백악관 참모진을 질책했다는 외신 보도까지 나왔습니다.</p>
+<p>뉴욕에서 KBS 뉴스 우정화입니다.</p>
+<p>영상편집:김대범/화면출처:토미 크리스토퍼 서브스택(온라인 플랫폼)/그래픽:김지혜/자료조사:남서현</p>
+<p>■ 제보하기</p>
+<p>▷ 전화 : 02-781-1234, 4444</p>
+<p>▷ 이메일 : kbs1234@kbs.co.kr</p>
+<p>▷ 카카오톡 : &#x27;KBS제보&#x27; 검색, 채널 추가</p>
+<p>▷  유튜브, 다음에서도 KBS뉴스를 구독해주세요!</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/003/0014264146" target="_blank" rel="noopener">필리핀, &quot;무력 사용 위협&quot; 발언 中대사 초치해 항의…中 반발(종합)</a></h3>
+      <p class="meta">뉴시스 · 2026-10-19 19:05:08 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>필리핀 의회, 징취안 중국 대사 추방 요구</p>
+<p>징취안 15일 &quot;무력 쓰면 쉽게 승리하겠지만 무력 사용 안 해&quot; 발언</p>
+<p>[서울·베이징=뉴시스]유세진 기자,  박정규 특파원 = 필리핀 정부가 19일 징취안(井泉) 주필리핀 중국대사를 초치해 무력 사용을 언급한 발언에 항의하면서 분쟁 중인 남중국해에서 중국의 행동을 비판하는 필리핀 관리들을 위협하려는 시도를 용납하지 않겠다고 밝혔다.</p>
+<p>AP통신에 따르면 마 테레사 라자로 필리핀 외무장관은 징 대사의 지난 15일 발언에 대해 필리핀 정부의 심각한 우려와 &#x27;강력한 반대&#x27;를 전달했다고 마닐라 외무부가 밝혔다.</p>
+<p>중국과 필리핀은 오랫동안 남중국해 영토를 두고 충돌해 왔지만, 최근 페르디난드 마르코스 주니어 대통령 집권 이후 양국 간 해상 긴장과 격렬한 언쟁이 더욱 심화됐다.</p>
+<p>중국은 주요 국제 무역로인 남중국해의 사실상 모든 수로를 자국의 주권 영토로 주장하고 있다. 필리핀, 베트남, 말레이시아, 브루나이, 대만은 모두 이 해역에 대해 각각 별도의 영유권을 주장하고 있다.</p>
+<p>필리핀 외무부는 &quot;필요하다고 판단되는 추가 외교 조치를 취할 권리를 보유한다&quot;고 덧붙였다. 일부 필리핀 의원들은 징 대사를 규탄 또는 추방해야 한다고 요구했다.</p>
+<p>주필리핀 중국대사관은 &quot;&#x27;16일 징 대사의 발언을 유감스럽게 여긴다&#x27;는 필리핀 외무부의 성명은 대사의 발언을 맥락에서 벗어나 선별적이고 과도하게 해석한 것&quot;이라고 말했다.</p>
+<p>징 대사는 지난 15일 마닐라에서 열린 한 포럼에서 중국을 이 지역의 &#x27;문제아&#x27;로 지목한 길베르토 테오도로 주니어 필리핀 국방장관의 발언에 대한 논평 요청에 &quot;말도 안 되는 소리&quot;라며 필리핀은 중국을 이웃으로 둘 수 있다는 점에 행운을 느껴야 한다고 답했다.</p>
+<p>그는 &quot;무력을 사용하려 한다면, 우리는 쉽게 승리할 수 있을지 모른다. 하지만 우리는 무력을 선택하지 않을 것이고, 평화를 사랑한다&quot;고 말했다. 그는 &quot;우크라이나와 가자, 베네수엘라와 달리 이 지역은 평화를 누리고 있다&quot;고 덧붙였다.</p>
+<p>라자로 장관은 징 대사에게 &quot;당신의 도발적이고 용납할 수 없으며 이해를 형성하는 데 기여하지 않는다&quot;고 말한 것으로 전해졌다. 그는 &quot;필리핀은 민주주의 국가로서 표현의 자유와 다양한 목소리를 소중히 여기며, 이를 행사하는 이들을 위협하려는 외국 사절의 시도를 결코 용납하지 않을 것&quot;이라고 덧붙였다.</p>
+<p>이 같은 필리핀의 반응에 대해 중국 정부는 필리핀 관료들의 발언에 문제가 있다고 겨냥하면서 반발했다.</p>
+<p>마오닝 중국 외교부 대변인은 19일  정례브리핑에서 &quot;중·필리핀 관계를 개선·발전시키는 것은 중·필리핀 양국의 공동 이익에 부합한다&quot;며 &quot;동시에 필리핀 측 일부 인사들의 중국 의제와 관련된 악의적인 선동으로 중·필리핀 관계를 훼손하는 것에 단호히 반대한다&quot;고 밝혔다.</p>
+<p>마오 대변인은 이어 &quot;필리핀은 일부 정치인의 무책임한 언행을 실질적으로 제지해야 한다&quot;고 촉구했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/056/0012276297" target="_blank" rel="noopener">[맵 브리핑] 분리독립 투표 D-1…미국 개입?</a></h3>
+      <p class="meta">KBS · 2026-10-19 15:26:20 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>주요 외신이 전한  소식들 가운데  놓치기 쉬운 뉴스를 정리한 &#x27;맵브리핑&#x27;입니다.</p>
+<p>오늘은  캐나다 앨버타주부터 갑니다.</p>
+<p>이곳에서 현지 시각으로 19일,  분리독립 추진  여부를 결정하는 주민투표를 실시합니다.</p>
+<p>주민들은 투표를 통해 캐나다에 남을지,  아니면 분리독립을 위한 후속절차에 착수할지를  선택합니다.</p>
+<p>다만  이번 투표 자체는 법적 구속력이 없으며  분리독립 추진에  찬성하는 결과가 나오더라도 앨버타주가 곧바로  캐나다에서 독립하는 것은 아닙니다.</p>
+<p>앨버타주는 캐나다 최대 원유 생산지로 캐나다 경제에서 중요한 역할을 차지하고 있는데요.</p>
+<p>주민들은  연방정부의 환경 규제 등이  지역의 핵심 산업을 위축시킨다는 불만을 제기해 왔습니다.</p>
+<p>미국의 개입 가능성을 둘러싼 논란도 커지고 있는데요.</p>
+<p>트럼프 대통령이  취임 이후 캐나다를  미국의 51번째 주로 만들겠다고  거듭 언급했죠.</p>
+<p>분리 독립운동 관계자들이 지난해  미국 국무부 관계자들과  세 차례 만나  지원 문제를 논의했다는  보도 등이 나와섭니다.</p>
+<p>마크 카니 캐나다 총리는 지난 15일 앨버타주 캘거리에서 열린 집회에서 &#x27;국경 밖 일부 세력이 우리를 분열시켜 자신들이 차지하려 하고 있다&#x27;며 국가적 단결을 호소했습니다.</p>
+<p>■ 제보하기</p>
+<p>▷ 전화 : 02-781-1234, 4444</p>
+<p>▷ 이메일 : kbs1234@kbs.co.kr</p>
+<p>▷ 카카오톡 : &#x27;KBS제보&#x27; 검색, 채널 추가</p>
+<p>▷  유튜브, 다음에서도 KBS뉴스를 구독해주세요!</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/421/0009237280" target="_blank" rel="noopener">프랑스 여행 주의보 잇달아…&quot;추가 시위·소요 사태 가능성&quot;</a></h3>
+      <p class="meta">뉴스1 · 2026-10-19 19:57:39 &nbsp;<span class="chip">세계</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>한국 대사관도 &quot;시위 현장 인근 방문 자제&quot; 당부</p>
+<p>(런던=뉴스1) 이지예 객원기자 = 세계 각국이 대규모 시위가 격화하고 있는 프랑스에 대해 잇달아 여행 주의보를 발령했다. 프랑스에서는 생활비 급등에 항의하는 시위가 전국적으로 확산하면서 약탈·방화 등 폭력 사태가 심화하고 있다.</p>
+<p>독일 외무부는 18일(현지시간) 웹사이트를 통해 발표한 &#x27;프랑스 여행·안전 주의보&#x27;를 통해 &quot;향후 며칠간 추가적인 시위나 소요 사태가 발생할 가능성을 배제할 수 없다&quot;며 &quot;각별한 주의를 기울이고 시위 현장은 가능한 한 접근하지 말라&quot;고 당부했다.</p>
+<p>이탈리아 외무부는 &#x27;프랑스 시위 관련 안내&#x27;에서 &quot;대규모 집회 장소를 피하라&quot;며 &quot;현지 상황 변화를 지속적으로 확인하고 현지 당국 지침을 엄격히 준수하라&quot;고 촉구했다. 또 이탈리아 정부가 소재를 파악할 수 있도록 체류지를 등록하라고 권고했다.</p>
+<p>네덜란드, 폴란드, 체코, 덴마크, 스웨덴, 핀란드, 노르웨이 등도 프랑스 체류 시 시위 현장 방문을 피하고 현지 당국의 지침을 다르라는 주의보를 내렸다고 로이터통신이 보도했다.</p>
+<p>프랑스에서는 교육환경 개선을 요구하는 고등학생 시위와 고물가 및 공공 서비스 저하에 항의하는 시위가 이어지고 있다. 17일에는 전국적으로 80만 명이 참석한 대규모 시위가 열렸고, 이 과정에서 경찰과 시위대가 충돌해 2400명이 체포됐다.</p>
+<p>일부 과격 시위대가 애플, 루이뷔통, 에르메스 유명 브랜드 매장을 약탈하기도 했다. 프랑스 소매·상업연맹은 전국에서 약 1500개 사업장이 피해를 봤다고 집계했다. 남서부 리모주에서는 시위대가 140년 된 시청 건물에 불을 질렀다.</p>
+<p>프랑스 주재 한국 대사관은 지난 16일 대규모 시위 관련 안전공지를 통해 &quot;시위 현장 인근 방문을 자제해 주길 바란다. 부득이하게 집회 장소를 지나게 될 경우에는 신속히 현장을 벗어나 피해를 입지 않도록 각별히 유의하라&quot;고 당부했다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <footer>이 브리핑은 네이버 뉴스 ‘언론사별 랭킹(많이 본 뉴스)’과 섹션 상위 기사를 바탕으로 자동 생성됐습니다. 각 기사의 저작권은 해당 언론사에 있으며, 원문 링크를 통해 출처를 확인할 수 있습니다. · 요약: 요약 없음 · <a class="foot-link" href="https://souljjab.github.io/news/archive/">지난 브리핑 모아보기</a></footer>
+</div>
+</body>
+</html>
