@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>오늘의 뉴스 브리핑 · 2026-10-31</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F4EE; --card:#FFFFFF; --ink:#1C1A15; --sub:#756F63;
+  --rule:#DCD6C8; --seal:#B3261E; --steel:#2C3D5B; --wash:#F9F7F1;
+  --down:#1B5FA8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  font-size:15.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:840px;margin:0 auto;padding:40px 20px 72px}
+.masthead{display:flex;align-items:center;gap:18px}
+.archive-link{margin-left:auto;flex:0 0 auto;align-self:center;
+  display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+  border:1px solid var(--rule);border-radius:20px;background:var(--card);
+  color:var(--steel);font-size:12.5px;font-weight:500;padding:7px 14px;
+  transition:border-color .15s,color .15s}
+.archive-link:hover{border-color:var(--steel);color:var(--ink)}
+.foot-link{color:var(--steel)}
+@media(max-width:520px){
+  .masthead{flex-wrap:wrap}
+  .archive-link{margin-left:74px;margin-top:-4px}
+}
+.seal{flex:0 0 auto;width:64px;height:64px;border:2px solid var(--seal);
+  color:var(--seal);display:flex;flex-direction:column;align-items:center;
+  justify-content:center;font-family:'Noto Serif KR',serif;line-height:1.05}
+.seal span{font-size:12px;letter-spacing:2px}
+.seal b{font-size:27px;font-weight:900}
+.eyebrow{margin:0;font-size:11px;letter-spacing:3.5px;color:var(--sub)}
+.masthead h1{margin:2px 0 4px;font-family:'Noto Serif KR',serif;
+  font-weight:900;font-size:31px;letter-spacing:-.5px}
+.mast-meta{margin:0;font-size:13px;color:var(--sub)}
+.double-rule{margin:20px 0 6px;border-top:3px solid var(--ink);
+  border-bottom:1px solid var(--ink);height:3px}
+.notice{font-size:12.5px;color:var(--sub);margin:8px 0 22px}
+.market{border:1px solid var(--rule);border-radius:6px;background:var(--card);
+  padding:16px 18px 14px;margin:0 0 8px}
+.market h2{margin:0 0 12px;font-family:'Noto Serif KR',serif;font-size:15px;
+  font-weight:700;display:flex;align-items:center;gap:8px}
+.market h2 .tick{width:9px;height:9px;background:var(--steel);flex:0 0 auto}
+.market h2 em{font-style:normal;font-weight:400;font-size:11.5px;
+  color:var(--sub);margin-left:auto}
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.q{border:1px solid var(--rule);border-radius:4px;background:var(--wash);
+  padding:10px 12px}
+.q-name{margin:0 0 3px;font-size:12px;color:var(--sub)}
+.q-price{margin:0;font-family:'Noto Serif KR',serif;font-size:19px;
+  font-weight:700;letter-spacing:-.3px}
+.q-chg{margin:2px 0 0;font-size:12.5px;font-weight:500}
+.q-chg.up{color:var(--seal)}
+.q-chg.down{color:var(--down)}
+.q-chg.flat{color:var(--sub)}
+.market-note{margin:11px 0 0;font-size:11.5px;color:var(--sub)}
+.sec{margin:44px 0 0}
+.sec-title{display:flex;align-items:baseline;gap:10px;margin:0 0 16px;
+  font-family:'Noto Serif KR',serif;font-size:21px;font-weight:700}
+.sec-title .tick{width:11px;height:11px;background:var(--seal);
+  flex:0 0 auto;align-self:center}
+.sec-title em{font-style:normal;font-weight:400;font-size:12.5px;
+  color:var(--sub);margin-left:auto}
+.card{display:flex;gap:16px;background:var(--card);border:1px solid var(--rule);
+  border-radius:6px;padding:20px 22px;margin:0 0 14px}
+.rank{flex:0 0 auto;width:34px;height:34px;border:1.5px solid var(--seal);
+  border-radius:50%;color:var(--seal);display:flex;align-items:center;
+  justify-content:center;font-family:'Noto Serif KR',serif;font-size:17px;
+  font-weight:700;margin-top:2px}
+.card-body{min-width:0;flex:1}
+.card h3{margin:0 0 6px;font-family:'Noto Serif KR',serif;
+  font-size:18.5px;font-weight:700;line-height:1.45;letter-spacing:-.2px}
+.card h3 a{color:var(--ink);text-decoration:none}
+.card h3 a:hover{color:var(--seal);text-decoration:underline}
+.meta{margin:0 0 12px;font-size:12.5px;color:var(--sub)}
+.chip{display:inline-block;border:1px solid var(--rule);border-radius:3px;
+  padding:1px 7px;font-size:11.5px;color:var(--steel);background:var(--wash)}
+.chip.src{color:var(--sub)}
+.summary{background:var(--wash);border-left:3px solid var(--steel);
+  padding:12px 15px;border-radius:0 4px 4px 0}
+.summary .cap{display:block;font-size:11px;letter-spacing:2px;
+  color:var(--steel);margin-bottom:4px}
+.summary p{margin:0;font-size:14.5px}
+details{margin-top:12px}
+summary{cursor:pointer;font-size:13px;color:var(--steel);
+  font-weight:500;user-select:none}
+summary:hover{color:var(--seal)}
+.orig{margin-top:10px;padding:14px 16px;border:1px dashed var(--rule);
+  border-radius:4px;font-size:14px;color:#39362E;max-height:460px;overflow:auto}
+.orig p{margin:0 0 10px}
+footer{margin-top:56px;padding-top:14px;border-top:1px solid var(--rule);
+  font-size:12px;color:var(--sub)}
+@media (max-width:560px){
+  .wrap{padding:26px 14px 56px}
+  .masthead h1{font-size:24px}
+  .card{padding:16px 14px;gap:12px}
+  .sec-title em{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div class="seal"><span>10월</span><b>31</b></div>
+    <div>
+      <p class="eyebrow">NAVER NEWS · DAILY BRIEFING</p>
+      <h1>오늘의 뉴스 브리핑</h1>
+      <p class="mast-meta">2026-10-31 (토) 21:00 기준 · 전체 TOP 5 + 정치·경제·사회·IT/과학·세계 각 4건 · 중복 기사 없음</p>
+    </div>
+    <a class="archive-link" href="https://souljjab.github.io/news/archive/">지난 브리핑 &rarr;</a>
+  </header>
+  <div class="double-rule"></div>
+  <p class="notice">AI 요약 없이 기사 원문을 그대로 실었습니다.</p>
+  <section class="market">
+    <h2><span class="tick"></span>오늘의 시세<em>환율 · 국내외 종목</em></h2>
+    <div class="qgrid">
+      <div class="q"><p class="q-name">원/달러 환율</p><p class="q-price">1,335.10원</p><p class="q-chg up">▲ 13.34 (+1.01%)</p></div>
+      <div class="q"><p class="q-name">삼성전자</p><p class="q-price">220,500원</p><p class="q-chg down">▼ 11,500 (-4.96%)</p></div>
+      <div class="q"><p class="q-name">SK하이닉스</p><p class="q-price">1,391,000원</p><p class="q-chg down">▼ 135,000 (-8.85%)</p></div>
+      <div class="q"><p class="q-name">SOXL</p><p class="q-price">$77.05</p><p class="q-chg down">▼ 25.34 (-24.75%)</p></div>
+      <div class="q"><p class="q-name">NNE</p><p class="q-price">$11.65</p><p class="q-chg down">▼ 0.56 (-4.59%)</p></div>
+    </div>
+    <p class="market-note">종가 기준입니다. 국내 종목·환율은 직전 거래일 종가, 미국 종목은 가장 최근 미국 장 마감가입니다. 출처: 네이버 금융 · 야후 파이낸스</p>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🔥 전체 인기 TOP 5<em>카테고리 무관 · 언론사별 랭킹 상위</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/015/0005348778?ntype=RANKING" target="_blank" rel="noopener">&quot;단교할 수도&quot; 韓 외교장관 발언에…우크라, 바로 선 그었다</a></h3>
+      <p class="meta">한국경제 · 2026-10-31 16:38:18 &nbsp;<span class="chip">전체</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>우크라 &quot;한국과 단교 검토 안 해&quot;</p>
+<p>우크라이나 정부가 북한군 포로 송환 문제로 빚어진 한국과의 외교 갈등과 관련해 양국 간 외교관계 단절은 검토하지 않고 있다는 공식 입장을 내놨다. 최근 한국 내에서 거론된 &#x27;단교 가능성&#x27;은 조현 외교부 장관의 원론적 답변이 과장 보도된 것이라며 수위 조절에 나선 모습이다.</p>
+<p>30일(현지시간) 현지 매체 RBC-우크라이나 등에 따르면 헤오르히 티히 우크라이나 외무부 대변인은 이날 보도된 양국 외교관계 단절설에 대해 &quot;이는 사실이 아니다&quot;라고 선을 그었다.</p>
+<p>티히 대변인은 조 장관의 발언을 직접 언급하며 &quot;한국 장관이 양국 외교관계를 위협할 정도로 상황이 악화할 수 있는지 질문을 받고 원론적·가정적으로 답한 것일 뿐&quot;이라며 &quot;실제 발언의 맥락과 취지를 신중하게 해석해야 한다&quot;고 강조했다.</p>
+<p>조 장관 발언의 본질은 한국이 우크라이나에 대한 폭넓은 지원을 이어가고, 러시아의 침략을 종식하기 위한 국제사회 공조에 지속 참여한다는 취지였다는 설명이다.</p>
+<p>앞서 조 장관은 지난 27일 국회 외교통일위원회 국정감사에서 &quot;국교 단절에 준하는 갈등 상황 아니냐&quot;는 송석준 국민의힘 의원의 질의에 &quot;계속 이렇게 에스컬레이트(고조)하면 그럴 가능성도 있으리라 생각한다&quot;고 답변했다. 우크라이나 측은 이를 두고 언론과 정치권 일각에서 단교 가능성을 기정사실화해 불필요한 외교적 파장을 키웠다고 주장한 것이다.</p>
+<p>양국 외교 갈등은 지난달 23일 볼로디미르 젤렌스키 우크라이나 대통령이 뉴욕 유엔총회에서 북한군 포로 2명의 한국 송환 사실을 일방 공개하면서 불거졌다.</p>
+<p>정부는 포로와 북한 내 잔류 가족들의 신변 안전을 이유로 비공개 송환을 합의했음에도 우크라이나가 이를 일방 파기했다며 공식 사과와 해명을 요구했다. 반면 우크라이나 측은 비공개 합의 사실 자체를 부인하며 공식 사과를 거부해 왔다. 이에 정부는 항의 차원에서 박기창 주우크라이나 대사를 본국으로 소환하고 현지 공관 인력 일부를 철수시키는 등 강경 대응에 나선 상태다.</p>
+<p>이번 우크라이나 외무부의 입장 표명은 갈등이 국교 단절 위기설로 비화하는 것을 차단하고 한국과의 실질 협력 관계를 유지하려는 계산으로 풀이된다. 다만 정부가 줄곧 요구해 온 &#x27;포로 공개에 대한 공식 사과&#x27;에 대해선 여전히 언급을 피하고 있어, 양국 간 냉각기가 조기에 해소되기는 쉽지 않을 것이란 관측이 나온다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/002/0002463677?ntype=RANKING" target="_blank" rel="noopener">[속보] 李대통령, 경북 청송·영양 깜짝방문…&quot;기본소득 덕분에 인구 늘었다&quot;</a></h3>
+      <p class="meta">프레시안 · 2026-10-31 18:32:15 &nbsp;<span class="chip">전체</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>이재명 대통령이 31일 경북 청송과 영양을 방문해 현지 주민과 간담회를 갖고 특히 농어촌 기본소득 시행 후 지역의 체감상을 확인하는 자리를 마련했다. 청송과 영양은 농어촌 기본소득 시범지역이다.</p>
+<p>이날 김성완 청와대 대변인은 서면 브리핑에서 이 대통령이 이들 두 곳을 방문해 &quot;농어촌 기본소득 시행 이후 지역에서 체감하는 변화를 직접 시찰하고, 지역 주민 및 소상공인들과 소통하는 시간을 가졌다&quot;고 밝혔다.</p>
+<p>청송은 올해 6월, 영양은 올해 10월 농어촌 기본소득 시범지역으로 선정됐다. 이에 따라 자체 군비 재원을 더해 주민 1인당 월 20만 원의 지역사랑상품권을 지급하고 있다.</p>
+<p>인구 감소 지역이던 이곳은 시범지역 선정 후 인구가 5% 이상 증가했다. 상권 매출도 증가했다는 평가다.</p>
+<p>이날 이 대통령은 먼저 청송군 진보면 진보전통시장 인근의 상권을 방문해 음식점, 정육점, 마트, 약국, 세탁소, 미용실, 옷 가게 등 다양한 업종의 상점을 방문했다. 이 대통령이 도착하자 주민과 상인들이 박수를 치며 대통령을 환영했다. 청송군수도 &quot;대통령이 오시는 건 청송군이 생기고 나서 처음&quot;이라며 반겼다. 자신을 80대라고 밝힌 한 노부부는 이 대통령에게 사진 촬영을 청했다.</p>
+<p>이 대통령은 상점을 둘러보던 중 청년 사장을 만나 &quot;면 지역에서 창업하기 쉽지 않았을텐데, 용기가 필요했겠다&quot;라고 말을 건넸다. 이에 청년 사장은 &quot;가게를 하나 차리는 게 목표였는데, 기본 소득 때문에 장사할 만하다&quot;고 답했다. 다른 상점 사장들도 기본소득 효과를 체감한다고 말했다.</p>
+<p>청송군수는 &quot;기본소득을 시행한 지 2~3개월 만에 인구가 1500명 늘었다&quot;며 &quot;앞으로 3000명까지 늘어날 것으로 본다&quot;고 말했다.</p>
+<p>이 대통령은 상권 순회 후 식당으로 이동해 지역 소상공인과 주민, 청송군수, 송미령 농림축산식품부 장관 등과 소고기국밥으로 오찬을 함께했다. 이 자리에서 주민들은 농어촌 기본소득 확대 등을 위해 지방재정 부담 완화를 요청했다. 이 대통령은 이에 &quot;기본소득이 보다 안정적으로 이뤄질 수 있도록 재정 부분에 더 관심을 가지겠다&quot;는 뜻을 밝혔다.</p>
+<p>이 대통령은 청송군 방문 후 영양군으로 이동해 이동장터인 &#x27;마실장터&#x27;가 열린 연당1리를 방문했다. 영양군 이동장터는 인근에 상점이 없어 생필품 구매에 불편을 겪는 주민들을 위해 군에서 추진하는 사업이다. 차량 2대를 이용해 식료품 등 150종이 넘는 생필품을 판매하는 방식이다. 이동이 어려운 지역 노인들의 편의를 위해 매주 5일, 1일 2회씩 마을회관 등 주민 접근성이 높은 장소에서 장터를 연다.</p>
+<p>영양군수도 &quot;대통령이 방문한 건 처음&quot;이라며 &quot;기본소득 지원 효과로 영양군이 반세기만에 인구가 늘었다&quot;고 밝혔다.</p>
+<p>이 대통령은 마실장터를 운영하는 농업회사법인 &#x27;별마당&#x27; 김선환 대표로부터 마실장터 운영 현황 등에 관한 설명을 들었다. 김 대표는 &quot;주민들은 쿠팡보다 빠르다고 한다&quot;고 장터 효능을 강조했다.</p>
+<p>마실장터 시찰 후 이 대통령은 연당1리 마을회관으로 이동해 연당 1리 이장 , 영양주민, 카페 사장, 전통식품 제조 기업 대표 등 주민들과 대화를 나눴다.</p>
+<p>이 자리에서 이 대통령은 &quot;영양 산너머가 (제 고향인) 안동이다. 어린 시절 귓병이 나서 아버지 손을 잡고 영양에 왔던 기억이 있다&quot;고 과거를 회상했다. 이 대통령은 이어 &quot;산으로 겹겹이 둘러싸여 육지의 섬이 되어 어려움을 겪고 있는 영양에 기본소득은 새로운 기회가 될 수 있을 것&quot;이라고 말했다.</p>
+<p>20년간 서울에서 직장 생활을 하다 귀농해 사과를 이용한 특산주를 만들고 있다는 한 참석자는 &quot;기본 소득을 보고 이주한 직원이 다음 달부터 혜택을 받게 된다&quot;며 &quot;그 직원처럼 기본소득이 새로운 삶을 찾는 원동력이 되고 있다&quot;고 말했다.</p>
+<p>한편 이 대통령은 &quot;전국 최대 풍력 단지가 있는 영양은 바람에 이어 햇빛을 활용한 재생에너지 사업을 통해 얻은 공유 수익을 기본소득 재원으로 활용할 수 있을 것&quot;이라고 언급하기도 했다.</p>
+<p>이 대통령은 간담회 후 마을 주민들과 단체 사진을 촬영하고 영양 전통시장을 방문했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/366/0001201686?ntype=RANKING" target="_blank" rel="noopener">부산 북항서 사라진 ‘부캉이’…수온 떨어져 이동한 듯</a></h3>
+      <p class="meta">조선비즈 · 2026-10-31 13:57:11 &nbsp;<span class="chip">전체</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>부산 북항 친수공원 인공 수로에서 한 달 넘게 머물다 밖으로 나간 상어 ‘부캉이’가 최근 며칠째 눈에 띄지 않고 있다. 수온 하강이 영향을 미쳤을 것이라는 관측이 나온다.</p>
+<p>31일 관계 기관에 따르면 부캉이는 지난 27일부터 5일째 국립수산과학원의 모니터링에 포착되지 않고 있다.</p>
+<p>수산과학원은 전날부터 정기적인 현장 점검을 중단하고 시민 제보가 있을 경우 현장에 출동해 확인하는 것으로 모니터링 방식을 전환했다. 아직 제보도 접수되지 않았다.</p>
+<p>전문가들은 북항 앞바다의 수온 하강도 부캉이의 행태 변화에 영향을 준 것으로 보고 있다.</p>
+<p>부캉이가 친수공원 수로에서 처음 목격된 지난달 18일만 해도 북항 앞바다 표층 수온은 25도 수준이었다. 날씨가 추워지면서 지난 28일 처음으로 20도 아래로 떨어졌다.</p>
+<p>부캉이가 속한 흑상어의 서식에 적정 수온은 18∼26도라는 게 전문가들의 설명이다. 북항 앞바다는 현재 적정 수온의 하한선에 가깝다. 11월 중순에는 15도까지 떨어질 것으로 예상된다.</p>
+<p>표층 수온이 떨어지면서 부캉이가 상대적으로 따뜻한 심해로 내려갔을 수 있다.</p>
+<p>수산과학원 관계자는 “부캉이의 활동 반경이 넓어지면서 북항 앞바다에서 목격될 확률이 매우 낮아진 상황”이라고 말했다.</p>
+<p>지난달 18일 친수공원 수로에서 처음 목격된 부캉이는 33일 만인 이달 21일 당국의 유도 작업으로 수로 밖으로 나가 북항 앞바다에 출몰해왔다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/014/0005597359?ntype=RANKING" target="_blank" rel="noopener">&#x27;삼시세끼에 골프치고, 수영·영화까지&#x27;...남의 밥값 왜 내냐 [부동산 아토즈]</a></h3>
+      <p class="meta">파이낸셜뉴스 · 2026-10-31 14:00:15 &nbsp;<span class="chip">전체</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>[파이낸셜뉴스] 요즘 새 단지 기본은 &#x27;밥 잘 주는 아파트&#x27;이다. 호텔식 서비스는 물론 &#x27;삼시세끼&#x27; 제공은 고급 주거 단지의 기본처럼 돼 있다. 커뮤니티 시설도 사우나, 독서실, 카페, 피트니스센터 등은 기본이고, 영화관·수영장·스카이라운지 등까지 갖춘 단지도 적지 않다.</p>
+<p>하지만 날로 고급화 되는 서비스·커뮤니티는 갈등의 요인이기도 하다. &#x27;누가 얼마만큼 비용을 부담하는 것&#x27;을 놓고 입주자 간의 다툼이 대상이 되고 있어서다. 고급 단지에서도 이 같은 갈등으로 인해 커뮤니티 시설 및 서비스 운영을 중단한 아파트도 적지 않은 것이 현실이다.</p>
+<p>상권 붕괴 주범...알고 보니 &#x27;아파트 커뮤니티?&#x27;</p>
+<p>요즘 주변에서 찾기 힘든 시설로 사우나와 스포츠센터 등을 꼽는다. 여러 이유가 있는데 그 중 하나로 고급화·다양화 되는 아파트 커뮤니티 시설이 영향을 미쳤다는 분석도 있다.</p>
+<p>단지 안에 사우나·피트니스 시설을 이용하지 밖으로 나가지 않기 때문이다. 고준석 연세대 교수는 &quot;상권에 영향을 미치는 한 원인으로 아파트 커뮤니티 및 서비스 다양화·고급화가 꼽히고 있다&quot;고 말했다.</p>
+<p>이런 가운데 정부가 커뮤니티 고급화 경쟁에 제동을 걸지 주목이 된다. 최근 국토교통부가 &#x27;공동주택 복리시설 설치 운영 연구&#x27; 연구용역을 발주했기 때문이다.</p>
+<p>핵심은 커뮤니티 시설이 주거비 부담으로 연결되고 있다는 것이다. 단순 공사비 증가가 문제가 아니라 준공 이후 관리비 부담 등으로 유휴 공간이 되는 등 부작용이 크다는 판단이다. 연구용역의 핵심은 커뮤니티 시설 적정 기준 마련이다.</p>
+<p>용역기간은 8개월이다. 정부 계획대로 진행되면 이르면 내년 하반기에 연구 결과가 나오고, 관련 제도 개선은 내년 말이나 내후년 초께 가능할 것으로 보고 있다.</p>
+<p>관리비도 빈부격차?...서울은 7배 이상 차이</p>
+<p>그렇다면 관리비 수준은 어느 정도일까. 공동주택관리정보시스템에 따르면 올 7월 기준으로 서울 아파트 공용관리비는 월 평균 ㎡당 1773원이다. 1년 전(1679원) 대비 5.6% 상승했다. 3년 전에는 ㎡당 1562만원이다.</p>
+<p>전국의 경우 7월 기준으로 아파트 공용관리비가 2023년 ㎡당 1306원에서 2026년 1424원으로 상승했다. 공용관리비는 입주자가 같이 부담하는 항목이다. 물가 못지 않게 관리비도 뛰고 있는 것이다.</p>
+<p>개별단지별로 보면 격차가 심하다. 국민의힘 정동만 의원이 최근 받은 &#x27;2026년 전국 아파트 관리비 현황 및 순위&#x27;에 따르면 공용관리비 기준으로 전국 1위는 서울 성동구 &#x27;트리마제&#x27;로 ㎡당 4910원이다. 가구당 전체 관리비 기준으로 1위는 용산구 &#x27;나인원한남&#x27;으로 월 평균 170만원이다.</p>
+<p>반면 서울에서 관리비가 가장 싼 단지는 공용관리비 기준으로 금천구의 A단지로 ㎡당 687원이다. 이 단지 월 평균 관리비는 17만2000원이다. 공용관리비 기준으로 최고(4910원)와 최저(687원) 격차가 7배를 넘는다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">5</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/031/0001071053?ntype=RANKING" target="_blank" rel="noopener">홍준표 &quot;1억3000만원 투자했다가 몽땅 날려⋯이후 주식투자 안 해&quot;</a></h3>
+      <p class="meta">아이뉴스24 · 2026-10-31 18:44:18 &nbsp;<span class="chip">전체</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>홍준표 전 대구시장이 과거 벤처기업에 투자했다가 1억3000만원을 잃은 사연을 공개하며, 그 이후로 주식 투자를 한 적이 없다고 밝혔다.</p>
+<p>31일 홍 전 시장은 소셜미디어(SNS)에 &quot;증시에 상장된 주식을 단 한 번도 사본 일이 없다&quot;며 말문을 열었다.</p>
+<p>홍 전 시장은 &quot;2000년 4월 DJ 정부 때 동료 변호사에게 속아 벤처 투자를 한 일이 있다&quot;며 &quot;벤처 광풍이 불던 때였고, 비상장 회사 지분을 1억3000만원 투자하면 10배를 불려 준다기에 아내를 설득해 투자를 했지만 몽땅 날리고 제로가 됐다&quot;고 전했다.</p>
+<p>이어 &quot;그 변호사가 서초동 변호사를 속여 편취한 돈이 50억이 넘었다고 한다&quot;며 &quot;그때 속은 변호사들이 모두 남보기 창피해 쉬쉬하고 끝냈다&quot;고 했다.</p>
+<p>홍 전 시장은 &quot;그 이후로 주식투자를 단 한번도 한 적이 없다&quot;고 밝혔다. 아울러 최근 증시 상황에 대한 우려도 나타냈다.</p>
+<p>그는 &quot;요즘 증시가 폭락 상태에 이르고 개미투자자들이 손해를 많이 보고 있어 참 걱정&quot;이라며 &quot;AI와 반도체 경기가 폭발해 주식시장이 일시 호황이지만 주가지수가 실물 경제에 부합되게 차분히 성장했으면 한다&quot;고 덧붙였다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🏛️ 정치 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/020/0003759126?ntype=RANKING" target="_blank" rel="noopener">장동혁 “하나님께 물었더니 민주당 기다리라고”…빵 터진 與野</a></h3>
+      <p class="meta">동아일보 · 2026-10-31 18:13:11 &nbsp;<span class="chip">정치</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>서울세계청년대회서 김민석-張 조우</p>
+<p>金 “장 대표님과 함께, 최선 다해 돕겠다”</p>
+<p>張 “김 대표님 말씀 들으니”…웃으며 악수도</p>
+<p>여야 대표가 31일 ‘2027 서울 세계청년대회(World Youth Day·WYD)’의 성공 개최를 위해 “최선을 다해 돕겠다”고 약속했다. 세계청년대회는 가톨릭교회가 주관하는 세계 최대 규모의 청년 축제로, 내년 8월 서울에서 열릴 예정이다. 세계청년대회가 비가톨릭 국가에서 열리는 것은 이번이 처음이다.</p>
+<p>더불어민주당 김민석 대표와 국민의힘 장동혁 대표는 이날 오전 국회 의원회관에서 열린 ‘2027 서울 세계청년대회의 성공적 개최를 위한 대한민국 국회·정부·조직위원회 공동선언문 선포식’에 나란히 참석해 이 같이 밝혔다. 두 사람은 이 자리에서 만나 웃으며 악수를 나눴다. 또 정순택 천주교 서울대교구장(대주교)과 민주당 한정애·유동수·이재정·김남희·문정복·문금주·강득구 의원, 국민의힘 나경원·최형두·최보윤 의원 등도 참석했다.</p>
+<p>김 대표는 인사말에서 “국회가 여야를 넘어서 장 대표님과 함께하면서 최선을 다해서 돕겠다”며 “가톨릭 차원의 행사가 아니라 대한민국의, 또 청년의 세계를 위한 행사가 될 수 있도록 뜻을 모으겠다”고 말했다. 이어 “(민주당) 유동수 의원은 저한테 남아 있는 이 의정 활동 중에 다음 대회가 있을 때까지 의정 활동의 반을 본인의 에너지 그 이상을 쓰시겠다고 말씀하셨다”며 “오늘로써 반이 아니라 3분의 2 이상이 되신 것 같다”고 말했다.</p>
+<p>장 대표도 “지금 세계 청년들이 그 어느 때보다 어려운 시기에 직면해 있다”며 “최선을 다해 대회 성공적 개최를 위해서 돕겠다”고 화답했다. 이어 “국민의힘도 준비 지원단을 꾸려야 되는데 하느님께 ‘어떻게 할까요’ 했더니 ‘민주당 할 때까지 기다리라’고 말씀해 주셨다”며 “김 대표님 말씀을 들으니 왜 그렇게 말씀하셨는지 알 것 같다. 의정 활동의 3분의 2를 바칠 수 있는 의원님을 준비 단장으로 모시려 한다”고 받아쳐 웃음을 자아냈다.</p>
+<p>이에 유동수 의원은 “의정 활동의 반을 쓰겠다고 했는데 장 대표께서 3분의 2를 하는 의원을 추진 단장으로 임명하겠다고 해서 제가 4분의 3으로 올렸다”고 농담해 현장을 웃음바다로 만들었다. 국회 가톨릭 신도의원회 회장인 국민의힘 최영두 의원은 “장 대표가 말씀하셨는데 4분의 3보다 더 하는 5분의 4, 아니 저는 전부를 다하겠다”며 “왜냐하면 내년 세계청년대회는 대한민국과 전 세계를 위한 큰 축복이기 때문”이라고 말했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/214/0001532683?ntype=RANKING" target="_blank" rel="noopener">정청래 &quot;김민석, 100일 지나면 판가름‥혁신당과 내년 1월 합쳐야&quot;</a></h3>
+      <p class="meta">MBC · 2026-10-31 18:29:51 &nbsp;<span class="chip">정치</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>정청래 더불어민주당 전 대표가 현 김민석 대표 체제를 두고 &quot;100일 정도 되면 판가름이 날 것이라고 본다&quot;며 &quot;그 이후 어떤 깃발을 들 건지 하나하나 생각하고 있다&quot;고 밝혔습니다.</p>
+<p>정 전 대표는 오늘 유튜브 채널 &#x27;박시영TV&#x27;에 출연해, &#x27;김민석 대표가 취임 100일 안에 지지율을 10%p 올리겠다고 했다&#x27;는 진행자 발언을 두고 &quot;전당대회 이후 최소한의 예의는 지켜야 되겠다고 생각했다&quot;면서 &quot;100일만 말미를 달라는 의미라고 저는 이해했다&quot;고 말했습니다.</p>
+<p>이어 정 전 대표는 &quot;100일 이후 저의 역할은 무엇일지, 제가 기치를 내걸 건 무엇인지, 그때 어떤 깃발을 들 건지, 그 깃발에 어떤 글씨를 쓸 건지 지금 하나하나 생각하고 글을 써 놓고 있다&quot;고 말했습니다.</p>
+<p>정 전 대표는 또 조국혁신당과의 합당 필요성을 거듭 강조하면서 &quot;개인적으로 내년 1월까지 맞춰야 된다고 생각한다&quot;고 말했습니다.</p>
+<p>2028년 총선과, 그에 앞서 벌어질 당내 경선일정 등을 감안할 때 &#x27;내년 1월&#x27;이 적기라고 강조한 정 전 대표는 &quot;합당 시기가 늦어지면 혁신당은 와서 들러리를 설 수밖에 없다&quot;고 부연했습니다.</p>
+<p>정 전 대표는 &quot;혁신당과는 수십 년을 함께 살고 3년간 헤어져 산 같은 뿌리, 같은 집안&quot;이라며 &quot;총선 때 5백 표, 1천 표 가지고 당락이 결정된 곳이 너무 많다, 같은 편인 두 사람이 나가면 안 된다&quot;고 강조했습니다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/001/0016413261?ntype=RANKING" target="_blank" rel="noopener">李대통령, 野 &#x27;순방&#x27; 비판에 &quot;링거 맞고 코피…그결과 성과차이&quot;</a></h3>
+      <p class="meta">연합뉴스 · 2026-10-31 12:58:19 &nbsp;<span class="chip">정치</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>&quot;돼지 눈엔 돼지만…쇼핑·음주 가무는커녕 빽빽한 공식 업무 일정&quot;</p>
+<p>&quot;전·현직 대통령 해외순방 차이, 동행 기자단이 더 잘 알 것&quot;</p>
+<p>(서울=연합뉴스) 설승은 기자 = 이재명 대통령은 31일 해외 순방이 잦다는 야당의 비판을 겨냥해 &quot;부처 눈에는 부처만 보이고 돼지 눈에는 돼지만 보인다고, 사람은 아는 만큼만 보이는 법이니 이해해달라&quot;며 반박에 나섰다.</p>
+<p>이 대통령은 이날 엑스(X·옛 트위터)에 야당의 해외 순방 비판에 청와대가 공정하지 않다며 반박한 내용을 다룬 기사를 인용하며 대통령의 해외 순방은 단순 관광이 아니라고 적은 한 네티즌의 글을 재게시하며 이같이 말했다.</p>
+<p>이 대통령은 &quot;하는 일도 준비도 없이 사진 찍고 생색이나 내며 널널하게 음주, 쇼핑, 관광이나 즐기는 것을 대통령 해외 순방으로 아는 사람 입장에서는 관광, 쇼핑, 음주 가무는커녕 높은 강도의 사전 준비, 장시간 비행과 한나절도 빼지 않는 빽빽한 공식 업무 일정, 높은 업무 강도로 수시로 링거 주사를 맞으며 코피가 터지는 해외 순방조차도 놀러 가는 것처럼 보일 수 있다&quot;고 언급했다.</p>
+<p>이어 &quot;전현직 대통령의 해외순방 일정과 업무강도, 그 결과로써 순방 성과의 차이는 함께 경험하는 동행 기자단이 더 잘 알 것&quot;이라고 덧붙였다.</p>
+<p>전날 위성락 국가안보실장은 야당이 지난 29일 국정감사에서 이 대통령의 해외 순방을 비판한 점을 거론하며 &quot;특별히 너무 많다든가, 영부인이 왜 가냐고 문제를 제기하는 것은 공정하지 않다&quot;며 &quot;이런 현상은 다음에 누가 대통령이 되든, 어떤 정권이 오든 똑같다&quot;고 반박한 바 있다.</p>
+<p>그는 &quot;우리나라의 국제위상이 많이 올라가 우리 정상이 연중 가야만 하는 다자적 계기가 여러 개 있다&quot;고 설명한 데 이어 &quot;정상외교는 관행적으로 다 영부인을 수반한다&quot;며 &quot;(예를 들어) APEC에도 영부인들이 오고 영부인 프로그램도 있다&quot;고 부연했다.</p>
+<p>ses@yna.co.kr</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/087/0001227509?ntype=RANKING" target="_blank" rel="noopener">국민의힘, 李대통령 ‘돼지 눈‘ 발언에 반발…“비판하는 국민이 돼지로 보이나“</a></h3>
+      <p class="meta">강원일보 · 2026-10-31 18:07:10 &nbsp;<span class="chip">정치</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>장동혁 “링거 안 맞고 코피 안 터져도 되니 자중하라“</p>
+<p>성일종·조용술도 가세…해외 순방 논란 놓고 공방</p>
+<p>국민의힘이 31일 이재명 대통령의 이른바 ‘돼지 눈‘ 발언을 두고 국민의 정당한 비판을 폄훼한 것이라며 반발했다. 이 대통령이 잦은 해외 순방을 지적하는 야당을 향해 “돼지 눈에는 돼지만 보인다“고 반박하자, 국민의힘은 “본인을 비판하는 국민은 전부 돼지로 보이느냐“며 맞받았다.</p>
+<p>장동혁 국민의힘 대표는 이날 페이스북을 통해 이 대통령에게 “링거 안 맞고 코피 안 터져도 되니 이제 그만 자중하시라“고 촉구했다.</p>
+<p>장 대표는 이 대통령의 과거 해외 일정도 문제 삼았다.</p>
+<p>그는 “장병 발목이 날아갔는데도 뉴욕 맨해튼 시내 관광 다닌 사람은 누구? 그 와중에 멕시코까지 가서 부부 동반 야광봉 흔들며 K-POP 구경한 건 또 누구?“라고 반문했다.</p>
+<p>이어 “그러니 코피가 터지지“라고 덧붙이며 이 대통령의 해외 순방 관련 해명을 비판했다.</p>
+<p>당내 다른 인사들도 이 대통령의 발언이 국민의 문제 제기를 경시한 것이라며 비판에 가세했다.</p>
+<p>조용술 국민의힘 대변인은 논평에서 “국민의 정당한 문제 제기를 깎아내리는 것도 모자라 돼지에까지 빗대는 오만함을 드러냈다“고 주장했다.</p>
+<p>그러면서 “국민이 돼지로 보인다면 그것이야말로 돼지의 눈 아니냐“고 반문했다.</p>
+<p>3선 성일종 의원 역시 페이스북에 글을 올려 이 대통령의 발언을 비판했다.</p>
+<p>성 의원은 “돼지 눈에는 돼지만 보인다고 하는데 돼지나 고양이도 밥 주는 주인을 알아보고 따른다. 나라의 주인은 국민이라고 하지 않았냐“고 지적했다.</p>
+<p>이어 “외교·안보를 비롯해 주택과 주식 문제까지 서민의 삶이 무너진 상황에서 외유 자체가 어떻게 돼지의 요구냐“고 반문하며 해외 순방을 둘러싼 문제 제기의 정당성을 강조했다.</p>
+<p>이 대통령의 해외 순방을 둘러싼 논쟁은 ‘돼지 눈‘ 발언을 계기로 국민 비판에 대한 대통령의 대응 방식까지 쟁점으로 번지는 양상이다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>📈 경제 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/055/0001399620?ntype=RANKING" target="_blank" rel="noopener">샘 올트먼 &#x27;1박 2일 깜짝 방한&#x27;…삼성 사장단에 &#x27;코덱스 키보드&#x27; 선물</a></h3>
+      <p class="meta">SBS · 2026-10-31 15:47:58 &nbsp;<span class="chip">경제</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>▲ 샘 올트먼 오픈AI 최고경영자(CEO)가 송용호 삼성전자 DS(반도체)부문 AI센터장에게 &#x27;코덱스 마이크로 키보드&#x27;를 선물하고 있다.</p>
+<p>샘 올트먼 OpenAI 공동창업자 겸 최고경영자(CEO)가 오늘(31일) 오전 경기 용인 삼성인력개발원에서 삼성 계열사 사장단 50여 명과 &#x27;AI가 바꿀 다음 10년, 기업의 선택&#x27;을 주제로 미래 전략을 논의했습니다.</p>
+<p>1박 2일 일정으로 어젯밤 &#x27;깜짝 방한&#x27;한 올트먼 CEO의 오늘 간담회에는 리차드 호 하드웨어 담당 부사장, 키란 마니 아시아태평양·일본 총괄 대표, 안드레아스 하틀 아시아태평양·일본 영업 담당 부사장, 아르빈드 KC 최고인사책임자(CPO) 등 OpenAI 주요 경영진이 함께했습니다.</p>
+<p>또, 삼성에서는 전영현 삼성전자 대표이사 겸 DS(반도체)부문장(부회장), 노태문 삼성전자 대표이사 겸 DX(완제품)부문장(사장)을 포함해 송용호 삼성전자 DS부문 AI센터장, 최주선 삼성SDI 사장, 장덕현 삼성전기 사장 등 삼성전자와 전자·금융·바이오 분야 주요 계열사 사장단이 대거 참석했습니다.</p>
+<p>이재용 삼성 회장과의 면담은 오늘 일정에는 없었던 것으로 전해지며, 올트먼 CEO는 삼성 간담회 일정과 최태원 SK 회장과의 오찬 일정을 마친 뒤 오늘 오후 출국했습니다.</p>
+<p>오늘 간담회에서 올트먼 CEO는 &quot;앞으로는 단순히 AI를 사용한다는 이유만으로 지속 가능한 경쟁 우위를 확보할 수는 없을 것&quot;이라며, &quot;경쟁 우위는 AI를 어떻게 활용해 더 빠르게 움직이고, 더 나은 제품을 만들며, 경쟁사보다 앞서 나가느냐에 달려 있다&quot;고 말했습니다.</p>
+<p>올트먼 CEO는 또, 오픈AI의 코딩 에이전트인 코덱스(Codex)를 편리하게 사용할 수 있도록 돕는 &#x27;코덱스 마이크로 키보드&#x27;를 삼성 경영진에게 선물했습니다.</p>
+<p>삼성전자와 오픈AI는 지난해 10월 글로벌 AI 인프라 구축을 위한 협력의향서(LOI)를 체결하고, 오픈AI의 &#x27;스타게이트&#x27; 프로젝트에 필요한 메모리 반도체 공급을 추진해 왔습니다.</p>
+<p>당시 삼성SDS는 AI 데이터센터 구축과 기업용 AI 서비스 분야에서 협력하기로 했으며, 삼성물산과 삼성중공업은 해상 부유식 데이터센터 공동 개발을 추진하기로 했습니다.</p>
+<p>올해 7월에는 이재용 삼성전자 회장이 미국 샌프란시스코 오픈AI 본사를 방문하는 등 양사 간 교류도 지속하고 있습니다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/009/0005756974?ntype=RANKING" target="_blank" rel="noopener">“월요일 개장이 두렵습니다”…나스닥100 한달 새 2700조 증발</a></h3>
+      <p class="meta">매일경제 · 2026-10-31 18:14:16 &nbsp;<span class="chip">경제</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>나스닥100 지수 이달 들어 5.8% 넘게 하락</p>
+<p>예상 시가총액 감소 약 2670조원</p>
+<p>스페이스X 시가총액보다 커</p>
+<p>AI 투자 확대에 못미친 실적 발표 원인</p>
+<p>빅테크 기업 매출은 증가세</p>
+<p>대형 기술주 중심의 나스닥100 시가총액이 이달 들어서만 2조 달러(약 2670조원) 넘게 증발할 것이란 전망이 나왔다.</p>
+<p>인공지능(AI) 투자 확대에도 투자비 회수와 자금 조달에 대한 부담이 커지면서 기술주 전반에 매도세가 확산되고 있어서다.</p>
+<p>30일(현지시간) 로이터통신에 따르면 나스닥100 지수는 이달 들어 5.8% 넘게 하락했다. 이달 감소할 것으로 예상되는 시가총액은 약 2670조원 규모다. 이는 ‘스페이스X’의 전체 시가총액(1조8300달러)를 소폭 상회하는 수준이다.</p>
+<p>이날 뉴욕증시에서는 인텔이 실적 쇼크에 28.58% 폭락하면서 다음 달 2일 애플과 11월 중순 엔비디아의 실적 발표에 투자자들의 관심이 쏠린다. 인텔은 오일쇼크에 29.9% 급락했던 1974년 7월 5일 이후 52년 만에 최대 하락폭을 기록했다.</p>
+<p>이 같은 우려섞인 전망에는 빅테크 기업들이 AI 투자 확대에 나섰지만 그에 못미치는 실적 발표가 원인이 됐다는 분석이 나온다.</p>
+<p>구글 모회사 알파벳은 검색 광고를 중심으로 한 핵심 사업의 실적 부진과 현금 소진 규모 급증으로 지난 29일 주가가 12.6% 급락했다. 하루 기준 역대 최대 하락률로 이날 하루에만 시가총액 약 5100억달러(약 681조원)가 증발한 것으로 집계됐다.</p>
+<p>메타는 사상 최대 규모인 975억달러(약 130조원)의 자금 조달 계획을 내놓았다. 이에 AI 투자 부담에 대한 우려도 제기되고 있다.</p>
+<p>존 빌턴 JP모건자산운용 글로벌 멀티에셋 솔루션 전략 리서치 책임자는 “성장세가 얼마나 강할지에 대해 과대평가했을 가능성이 있다”면서도 “전체적으로 마이너스 성장으로 돌아선 것은 아니다”라고 진단했다. 이어 “데이터에 대한 수요는 충족하기 어려울 정도로 크고 계속 증가하고 있다”고 덧붙였다.</p>
+<p>투자 재원 마련 방안도 관심사다. 마이크로소프트(MS)는 약 250억달러 규모의 미국 투자등급 회사채 발행을 추진 중이다. 메타와 아마존, 알파벳은 최근 4년간 수천억달러 규모의 채권을 발행했다.</p>
+<p>로이터는 “빅테크 기업들의 채권시장 의존성이 커지는 것에 대한 우려도 나온다”면서 “상대적으로 거시 경제 환경에 영향을 덜 받던 빅테크 기업들이 향후 금리 상승 등 환경에 취약해질 수 있다”고 전했다.</p>
+<p>특히 투자에 따른 수익 실현이 예상보다 늦어질 경우 자금 조달 비용 상승과 맞물려 기업들의 재무 건전성이 악화할 가능성도 제기된다.</p>
+<p>현재 빅테크 기업들의 매출은 꾸준히 증가하고 있다. 아마존의 핵심 수익원인 아마존웹서비스(AWS)가 지속해서 성장하고 있고, 메타 역시 시장 예상치를 웃도는 매출 증가율을 보였다. 마이크로소프트도 최근 실적 발표에서 클라우드 사업의 높은 성장세가 이어질 것으로 전망했다.</p>
+<p>문제는 매출 성장과 별개로 AI 투자 규모가 급격히 불어나면서 향후 수익성 확보 여부는 불투명한 상태라는 점이다.</p>
+<p>모건스탠리는 내년 전체 AI 인프라 투자 규모가 1조달러(약 1335조원)를 넘어설 것으로 전망했다. JP모건은 올해 전 세계 AI 관련 자본적지출이 9000억달러(약 1202조원)에 달하고, 2030년까지 누적 투자 규모는 5조5000억달러(약 7343조원)에 이를 것으로 내다봤다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/023/0004007040?ntype=RANKING" target="_blank" rel="noopener">편의점 ‘밤 장사’ 대박... 외국인들 몰린다, 왜?</a></h3>
+      <p class="meta">조선일보 · 2026-10-31 06:01:17 &nbsp;<span class="chip">경제</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>[산업X파일] ‘안전한 한국’의 상징으로</p>
+<p>밤거리 편의점 즐기는 영상들도 한몫</p>
+<p>지난 26일 밤 10시 서울 중구 명동 거리. 밤을 밝히던 조명이 하나둘 꺼지기 시작했지만, 한 호텔 아래 GS25 편의점은 대낮보다 더 북적였다. 20여 명의 계산 대기 줄이 30평 남짓 매장의 절반 가까이를 차지했다. 이들은 올리브영 로고 등이 적힌 쇼핑백을 한 손에 들고, 다른 한 손으로 바나나우유, 캔맥주 같은 야식거리를 쥐고 있었다. 모두 외국인 관광객이었다.</p>
+<p>이 매장은 매출 규모가 2020년 GS25 서울 중구 매장 20위권이었지만, 올해 2위까지 올랐다. 명동 호텔에 머물면서 편의점을 ‘야식 창고’처럼 이용하는 외국인들 덕분이었다. 주변 편의점에선 키오스크로 환전하고 물건을 사거나, 라면 끓이는 모습을 촬영하는 외국인도 많았다.</p>
+<p>한국을 찾는 외국인 관광객이 급증하는 가운데, 국내 편의점이 ‘밤 장사’로 뜻밖의 수혜를 입고 있다. 편의점은 24시간 영업을 하는 몇 안 되는 장소이기 때문이다. 외국인들은 편의점을 최신 유행하는 한국 음식을 사는 공간이자, 한국의 안전한 밤 문화를 체험하는 공간으로 인식하고 있다. K컬처에 대한 관심 속에 한국을 찾는 외국인은 올해 역대 최대치를 기록할 것으로 전망된다. 한국관광공사에 따르면, 올 1~9월 누적 방한객은 1711만명으로 작년 같은 기간 대비 21.5% 늘었다. 사상 첫 외국인 관광객 2000만명 돌파가 유력하다는 분위기다.</p>
+<p>◇‘안전한 한국’의 상징 된 편의점</p>
+<p>국내 편의점 4사(CU·GS25·세븐일레븐·이마트24)에선 올 1~9월 외국인 매출이 작년 동기 대비 70% 안팎씩 일제히 늘었다. 특히 저녁부터 밤 시간대 매출이 성장을 견인했다.</p>
+<p>CU에선 올 1~9월 외국인 매출의 45.9%가 오후 6~11시에 집중됐다. 작년(45.3%) 대비 0.6%포인트 늘어난 수치다. 내국인의 경우 같은 시간대 매출 비율이 38.4%에 불과했다. GS25(47.1%)와 세븐일레븐(41%)의 이 시간대 외국인 매출 집중도 역시 높았다. 각각 내국인보다 9~10%포인트 높은 수준이다. 한 편의점 관계자는 “외국인들이 여행 일정을 마치고 숙소에 돌아가는 길에 편의점에 들러 야식을 구매하는 수요가 늘고 있다”고 했다.</p>
+<p>한밤중에 편의점에 가는 것이 ‘안전한 한국’을 제대로 즐기는 방법으로 소문난 영향도 있다. 틱톡 등 소셜미디어에는 외국인이 한국에서 어두운 골목을 걸어 편의점까지 간 뒤, 라면과 과자를 깔아두고 먹는 음식 영상이 속속 올라오고 있다. 영상에는 “미국에서 새벽 2시에 배고프다고 밖으로 나가는 건 납치당하기 딱 좋은 상황”이라거나 “우리나라도 이렇게 안전하면 좋겠다”는 댓글이 수없이 달린다.</p>
+<p>이날 명동 한 편의점에서 만난 튀르키예 국적의 우이가르 사르반(46)씨는 “소셜미디어에서 한국 음식 관련 영상을 정말 많이 봤다. 어떤 음식이든 간편하게 살 수 있어 편의점에 매일 야식을 먹으러 오고 있다”며 “튀르키예엔 24시간 여는 매장이 거의 없는데, 밤에 이런 공간에 있는 것 자체가 색다른 경험”이라고 했다.</p>
+<p>외국인들은 야식으로 간단히 먹을 수 있는 음료, 과자, 캔맥주를 주로 구매한다. 올 1~9월 CU에선 바나나우유가 오후 6~11시 매출 1위를 기록했고, 두바이 쫀득쿠키, 카스캔(500mL)이 뒤를 이었다. 세븐일레븐에선 올 1~9월 외국인의 치킨 매출이 작년 동기 대비 63% 늘었고, 특히 저녁·밤 시간대엔 매출이 341% 폭증했다. 이런 수요를 겨냥해 편의점들은 외국인 숙소가 밀집한 지역에 안주·과자·간편식 재고를 늘리고 있다.</p>
+<p>의외의 제품들이 밤 시간대 인기 상품에 오르기도 한다. 올 1~9월 GS25에선 오후 6~11시 외국인 매출 1위 상품이 2017년 설립된 중소 제조사(요즘)가 만드는 그릭요거트였다. 한국 건강식에 대한 관심 속에 두바이 쫀득쿠키, 바나나우유를 제쳤다. CU의 경우 성동구에서 이 시간대 인기 1위 상품이 5인조 보이그룹 코르티스 미니 2집, 3위도 5인조 보이그룹 투모로우바이투게더 미니 8집 음반이었다. K팝에 대한 관심이 밤에도 식지 않은 것이다.</p>
+<p>◇강원도·대전·부산 찍는 외국인들</p>
+<p>최근 한국을 여러 번 찾는 외국인이 늘며, 서울과 제주 같은 일부 지역에 국한됐던 관광이 여러 지방으로 분산되고 있다. 이런 변화도 편의점 매출에 반영되고 있다. GS25에선 올해 1~9월 오후 6~11시에 강원도(205.4%), 대전(120.9%), 부산(85.1%) 같은 지역의 외국인 매출이 작년 동기와 비교할 때 크게 늘었다. 경기도 파주시 임진각 평화누리공원 인근 CU 점포는 올해 매출에서 외국인 비율(55.3%)이 작년 대비 12.5%포인트 늘며, 전국 점포 중 외국인 매출 비율 순위가 7위에서 5위로 올라섰다.</p>
+<p>외형 성장이 주춤한 국내 편의점 업계가 외국인 관광객을 통해 새 시도에 나선다는 분석이 나온다. 편의점들은 높은 임대료에도 불구하고, 최근 성수와 명동 같은 관광지에 외국인을 겨냥한 대형·특화 매장을 잇따라 출점하고 있다. 세븐일레븐은 작년 10월 K팝 팬덤 상품과 기념품 매대, 가챠(뽑기) 시설을 포함한 110평 규모 ‘뉴웨이브 명동점’을 열었다. 외국인이 이 매장 고객의 90%를 차지한다. 이마트24는 지난 3월 편의점 업계 최대 규모의 라면 진열대를 갖춘 ‘K푸드랩 명동점’을 열고, 외국인 관광객을 대상으로 캐리어 보관 서비스를 운영하고 있다.</p>
+<p>관광 특화 편의점 점포 수도 증가 추세다. 올 10월 기준 CU 600곳, GS25 200곳, 세븐일레븐 250곳에 달한다. CU와 GS25는 이런 점포를 각각 연내 200곳, 500곳씩 늘리겠다는 계획이다. 외국인 관광객을 겨냥한 무인 환전 서비스부터 퍼스널 컬러 진단이 가능한 AI(인공지능) 뷰티 디바이스 등 체험형 요소까지 편의점에 도입되고 있다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/056/0012284724?ntype=RANKING" target="_blank" rel="noopener">“23살에 시작한 투자, 23억 날렸다”…깨달은 생존매매법은? [경제한방]</a></h3>
+      <p class="meta">KBS · 2026-10-31 09:00:15 &nbsp;<span class="chip">경제</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>단돈 200만 원으로 코인 투자를 시작한 20대 청년.</p>
+<p>상장 사기에 루나 사태 등으로 폭락장을 겪었지만 결국 23억 원으로 자산을 불렸습니다.</p>
+<p>비결은 무엇이었을까요?</p>
+<p>코인덕 곽상훈 작가와 함께 긴 하락장 속 내 시드와 멘탈을 지키는 방법 다뤄봅니다.</p>
+<p>※본 영상은 10월 20일 녹화본입니다. 시청에 참고하시기 바랍니다.</p>
+<p>(진행: 옥유정, 구성: 오수민, 연출: 장한솔)</p>
+<p>https://youtu.be/63oVZ8L8lgI</p>
+<p>■ 제보하기</p>
+<p>▷ 전화 : 02-781-1234, 4444</p>
+<p>▷ 이메일 : kbs1234@kbs.co.kr</p>
+<p>▷ 카카오톡 : &#x27;KBS제보&#x27; 검색, 채널 추가</p>
+<p>▷  유튜브, 다음에서도 KBS뉴스를 구독해주세요!</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>👥 사회 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/449/0000365944?ntype=RANKING" target="_blank" rel="noopener">긴장 속 이태원…경찰 7800명 투입</a></h3>
+      <p class="meta">채널A · 2026-10-31 18:46:31 &nbsp;<span class="chip">사회</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>[앵커]</p>
+<p>오늘의 주요뉴스입니다.</p>
+<p>1. 주말이 겹친 핼러윈을 맞아 전국 주요 번화가에 많은 인파가 몰렸습니다.</p>
+<p>정부는 인파 관리에 총력을 기울이고 있습니다.</p>
+<p>2. 고 최불암 씨에 대한 추모 행렬이 이틀째 이어졌습니다.</p>
+<p>드라마에서 부부로 호흡을 맞췄던 김혜자 씨는 &#x27;곧 다시 만나자&#x27;며 애도를 전했습니다.</p>
+<p>3. 현직 판사가 부당한 공격에 맞서야 한다면서 여권의 사법개혁 움직임을 공개 비판했습니다.</p>
+<p>뉴스에이 시작합니다. 김윤수입니다.</p>
+<p>독특한 분장과 떠들썩한 분위기로 가득찬 핼러윈입니다.</p>
+<p>오늘 밤 서울 이태원에만 수만 명에 달하는 인파가 몰릴 걸로 보입니다.</p>
+<p>7천명이 넘는 경찰과 장갑차까지 인파 관리에 투입됐습니다.</p>
+<p>현장 연결합니다.</p>
+<p>김다정 기자, 오늘 사람들이 얼마나 모일 것으로 예상됩니까?</p>
+<p>[기자]</p>
+<p>네 저는 지금 이태원 거리에 나와있는데요.</p>
+<p>핼러윈을 즐기려는 사람들이 계속 모여들고 있습니다.</p>
+<p>잠시 뒤 밤이 되면 최대 3만 명까지 몰려들 것으로 예상되는데요.</p>
+<p>경찰은 통행로를 나누고 골목길 통행 인파를 분산하며 사고에 대비하고 있습니다.</p>
+<p>핼러윈 하루 전날인 어젯밤부터, 이태원엔 축제 인파가 몰렸습니다.</p>
+<p>좁은 길에 사람이 가득차, 가다 서다를 반복합니다.</p>
+<p>바리케이트 사이, 경광봉을 든 경찰과 구청 관계자들이 안내에 나섭니다.</p>
+<p>[현장음]</p>
+<p>&quot;자 우측으로 지나갈게요. 우측으로&quot;</p>
+<p>같은 시각 합동 현장 상황실. 긴장감이 흐릅니다.</p>
+<p>[현장음]</p>
+<p>&quot;해밀턴 옥상 2번 한번 줌 해볼래요?&quot;</p>
+<p>[안종연 / 용산구 안전재난과장] PIP</p>
+<p>&quot;거리뿐만 아니라 건물 안에 들어가 있는 사람까지 포함해서 세계음식문화 거리에 전체적으로 인구가 몇 명이 있는지를 확인하고&quot;</p>
+<p>밤 10시 30분, 순식간에 인파가 몰려들며 거리마다 &#x27;보행 주의&#x27; 경고등이 뜹니다.</p>
+<p>통행 흐름이 막히지 않게, 인파를 분산시켜야 합니다.</p>
+<p>[현장음]</p>
+<p>&quot;우측 통행할게요(Keep the right please). 우측 통행할게요.&quot;</p>
+<p>지금 시각 밤 11시입니다.</p>
+<p>구청 상황실에 띄워둔 스마트 지도를 보면 세계음식문화거리 인구가 오후 6시에 비해, 5천여명이나 늘어났는데요.</p>
+<p>해당 거리에 나와보니 실시간으로 인파가 몰리고 있는 모습입니다.</p>
+<p>전국 인파 밀집 구역 28곳을 선정한 경찰은, 일요일인 내일까지 치안 유지 태세를 유지할 예정입니다.</p>
+<p>지금까지 이태원에서 전해드렸습니다.</p>
+<p>영상취재: 이승헌 추진엽</p>
+<p>영상편집: 차태윤</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/025/0003561833?ntype=RANKING" target="_blank" rel="noopener">“13살 연하 아내, 구찌 누나였다”…호빠에 2억 쏜 女 충격 실체</a></h3>
+      <p class="meta">중앙일보 · 2026-10-31 06:00:02 &nbsp;<span class="chip">사회</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>합법과 불법의 경계 사이에서 진실을 추적하는 탐정. ‘</p>
+<p>더중앙플러스-탐정 25시(https://www.joongang.co.kr/plus/series/376</p>
+<p>)’는 그들의 생태계로 들어가 비화를 취재했습니다.</p>
+<p>동탄에서 순댓국집을 운영 중인 49세 남성. 6살 난 아들 손을 잡고 경기 성남의 탐정사무소를 찾았다. 그는 지난해 13살 어린 아내가 서울 수유의 호스트바 선수와 데이트하는 현장을 덮친 뒤 상간 소송을 제기했다. 의심의 계기는 두 가지 이유에서 비롯됐다. 아이를 언제 데려갈 거냐는 유치원 원장의 항의성 전화가 잦아졌고, 어느 날 통장을 확인했더니 1년간 2억원이 빠져나갔다. 그런데 아내는 판사에게 “남자친구는 제가 결혼한 사실을 몰랐어요”라며 선수의 결백을 호소했다.</p>
+<p>남편이 돼지고기를 삶기 위해 새벽부터 문밖을 나선 날, 아내는 집안의 패물을 싹 다 챙긴 뒤 가출했다. 하지만 그는 이혼을 원치 않았다.</p>
+<p>“아내를 찾아주세요.”</p>
+<p>그게 의뢰 내용이었다.</p>
+<p>탐정을 찾는 의뢰인 모두가 이혼을 원하진 않는다. 중년에 혼자 사느니 그래도 곁에 부대끼며 살아갈 상대가 있어야 마음이 편하고, 양육할 자녀까지 있다면 외도는 체념하는 게 대다수다.</p>
+<p>사건을 수임한 탐정은 조사 첫날 수유의 유흥가를 탐문해보고 이래서는 진척이 없을 거라 판단해 호스트로 위장해 업계에 잠입했다. 그래도 호스트계의 최하급지인 수유여서 그런지 진입 장벽은 낮았다.</p>
+<p>이틀 동안 20번이 넘는 초이스를 다닌 탐정은 마침내 상간자에 대한 소문을 들었다.</p>
+<p>“그 2억 쏜 여자? 구찌 누나예요.”</p>
+<p>그 상간남은 뜻밖에도 선수 일은 관뒀다. 대신 사이버 룸살롱이라 불리는 유튜브 방송을 시작했다고 했다.</p>
+<p>채널명은 ‘수유짱(가명)’. 구독자는 500명 남짓한 소형 채널이다. 동영상도 쇼츠 4개뿐. 하지만 밤 10시부터 새벽 2시까지 진행되는 라이브 방송에서 상간자가 버는 수익은 상상 이상이었다. 평균 시청자 50여명과 소통하는데 하루 후원금만 300만원이 넘었다.</p>
+<p>차량으로 돌아온 탐정은 방송을 지켜봤다. 상간자 뒤에는 노래방 기계가 설치돼 있었다. 후원금이 터질 때마다 일어나서 춤을 추고 애교를 떠는 그를 관찰하는 것도 슬슬 고역일 때 화면에 흐르는 문구가 눈에 띄었다.</p>
+<p>‘키키노래방에 오신 것을 환영합니다.’</p>
+<p>지도엔 등록돼 있지 않은 업소. 발품을 들여 노래방 건물을 찾아냈다.</p>
+<p>(계속)</p>
+<p>탐정이 다급히 의뢰인에게 연락했다.</p>
+<p>“당장 아내 노트북으로 유튜브를 켜보세요.”</p>
+<p>아내의 노트북에 남은 소름 돋는 흔적. 남편은 깜짝 놀랐다.</p>
+<p>그리고 이튿날 새벽 2시 30분, 분홍색 홀복 차림의 부인이 회색 차량을 몰고 노래방 건물 앞에 나타났다. 그 이후 머리는 헝클어지고 피부는 메말라 있었다. 아내는 그 건물에서 무슨 짓을 벌인 걸까.</p>
+<p>더 기막힌 건 그다음이었다. 탐정을 통해 아내를 찾아낸 남편이 돌아오라고 빌자, 아내는 뜻밖의 행동까지 벌인다. 가출한 13세 연하 아내의 실체, 아래 링크에서 볼 수 있다.</p>
+<p>https://www.joongang.co.kr/article/25463667</p>
+<p>탐정 25시, 더 보시려면?</p>
+<p>포르쉐 블박엔 없었다…고단수 승무원 아내의 ‘충격 사생활’</p>
+<p>https://www.joongang.co.kr/article/25472837</p>
+<p>“내연녀 2명보다 위험” 아내가 쫓은 ‘마이바흐 20대女’ 정체</p>
+<p>https://www.joongang.co.kr/article/25465206</p>
+<p>“민지 죽이는 날^^”…판사도 포기한 학폭, 아빤 조폭 불렀다</p>
+<p>https://www.joongang.co.kr/article/25461576</p>
+<p>“둘째 아들, 저 여자 닮았네?”…새엄마 경악한 ‘702호 테슬라女’</p>
+<p>https://www.joongang.co.kr/article/25468963</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/018/0006400618?ntype=RANKING" target="_blank" rel="noopener">야구표 50장 &#x27;싹쓸이&#x27;한 10대…6배 되팔아 600만원 챙겨</a></h3>
+      <p class="meta">이데일리 · 2026-10-31 09:57:11 &nbsp;<span class="chip">사회</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>매크로로 포스트시즌 입장권 50여장 구매</p>
+<p>12차례 걸쳐 예매 후 중고거래로 되팔아…경찰에 덜미</p>
+<p>[이데일리 백주아 기자] 프로야구 포스트시즌 입장권을 매크로 프로그램으로 싹쓸이한 뒤 최대 6배 가격에 되팔아 수백만원을 챙긴 10대가 경찰에 붙잡혔다.</p>
+<p>(사진=챗gpt)</p>
+<p>31일 부산경찰청 사이버수사과에 따르면 경찰은 매크로 프로그램을 이용해 프로야구 입장권을 부정 구매하고 웃돈을 붙여 판매한 혐의로 10대 A군을 검거했다.</p>
+<p>A군은 지난 15일부터 16일까지 이틀간 매크로 프로그램을 이용해 포스트시즌 공식 예매처에서 12차례에 걸쳐 입장권 50여장을 구매한 혐의를 받는다.</p>
+<p>이후 중고 거래 플랫폼에 입장권을 올려 정가의 3~6배에 판매했다. A군은 총 9차례에 걸쳐 입장권을 되팔아 약 600만원의 부당이득을 챙긴 것으로 조사됐다.</p>
+<p>경찰은 국민체육진흥공단의 수사 의뢰를 받아 수사에 착수했으며, 이번 수사 결과를 문화체육관광부에 통보해 과징금 부과 등 후속 조치가 이뤄지도록 할 예정이다.</p>
+<p>특히 지난 8월 28일부터 시행된 개정 국민체육진흥법에 따라 매크로 프로그램을 사용하지 않더라도 입장권을 상습적이거나 영업 목적으로 비싸게 되파는 행위는 처벌 대상이 된다.</p>
+<p>부산경찰청 관계자는 “매크로 프로그램 사용 여부와 관계없이 판매자 동의 없이 입장권을 상습 또는 영업으로 구입가보다 비싸게 되파는 행위는 처벌될 수 있다”며 주의를 당부했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/421/0009261907?ntype=RANKING" target="_blank" rel="noopener">카페서 자랑하듯 흡연, 그것도 어린 학생이?…친구가 올린 영상 발칵</a></h3>
+      <p class="meta">뉴스1 · 2026-10-31 05:00:00 &nbsp;<span class="chip">사회</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>(서울=뉴스1) 신초롱 기자 = 경기 김포시의 한 카페에서 미성년자로 추정되는 남성이 담배를 피우는 듯한 모습이 담긴 영상이 공개돼 논란이 일고 있다.</p>
+<p>29일 사회관계망서비스(SNS) 스레드에는 김포의 한 카페에서 흡연하는 학생으로 추정되는 남성의 모습이 담긴 영상이 공유됐다.</p>
+<p>작성자 A 씨는 김포시의 한 카페에서 어린 학생으로 보이는 남성이 흡연하는 모습을 촬영한 영상을 제보받았다며 관련 장면을 공개했다.</p>
+<p>공개된 영상에는 검은색 상의를 입은 남성이 카페로 보이는 실내 공간에 서 있는 모습이 담겼다. 영상 속 남성의 얼굴은 가려져 있다.</p>
+<p>A 씨는 해당 남성이 카페 안에서 담배를 피웠으며 함께 있던 친구가 이를 촬영해 SNS에 게시했다고 주장했다.</p>
+<p>그러면서 영상 게시자가 &#x27;김포 흡연 카페&#x27;라는 제목을 붙여 해당 영상을 올렸다고 설명했다.</p>
+<p>A 씨는 카페 내부에서의 흡연 의혹뿐 아니라 해당 장면을 촬영해 SNS에 공개했다는 점도 문제로 지적했다.</p>
+<p>그는 &quot;설령 해당 카페가 흡연이 허용되는 장소라고 하더라도 미성년자라면 흡연을 삼가는 것이 바람직하다&quot;고 밝혔다.</p>
+<p>이어 청소년 흡연이 건강에 악영향을 미칠 수 있다며 &quot;흡연하는 모습을 SNS에 공개하는 행동 역시 다른 청소년들에게 부정적인 영향을 줄 수 있다&quot;고 우려했다.</p>
+<p>또 &quot;이러한 행동을 대수롭지 않게 여기거나 자랑거리처럼 SNS에 게시하는 문화에 대해서는 비판적인 시각이 필요하다&quot;고 덧붙였다.</p>
+<p>다만 영상 속 남성의 실제 나이와 흡연 여부, 해당 카페가 흡연이 허용된 공간인지 등은 확인되지 않았다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🔬 IT/과학 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/092/0002443257?ntype=RANKING" target="_blank" rel="noopener">삼성 갤럭시Z폴드9 울트라, 얼마나 달라지나</a></h3>
+      <p class="meta">지디넷코리아 · 2026-10-31 08:00:14 &nbsp;<span class="chip">IT/과학</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>샘모바일 &quot;후면 카메라, 세로형→직사각형 형태로 바뀔 수도&quot;</p>
+<p>삼성전자가 내년에 출시할 차세대 플래그십 폴더블폰 ‘갤럭시Z폴드9 울트라’의 사양 정보가 벌써부터 나오고 있다.</p>
+<p>IT매체 샘모바일은 30일(현지시간) 지금까지 나온 소문을 종합해 갤럭시Z폴드9 울트라가 전작과 비교해 어떤 변화를 보일지 전망하는 기사를 게재했다.</p>
+<p>■ 디자인</p>
+<p>·</p>
+<p>디스플레이</p>
+<p>갤럭시S26 울트라 (사진=씨넷)</p>
+<p>갤럭시Z폴드9 울트라는 전작인 갤Z폴드8 울트라와 마찬가지로 세로로 긴 폼팩터를 채택할 가능성이 높다고 해당 매체는 전했다. 전•후면에는 코닝 고릴라 글래스를 적용하고 고급 알루미늄 프레임을 사용하며, 애플 아이폰 듀오와 마찬가지로 IP68 등급의 방진·방수 기능을 지원할 것으로 예상된다.</p>
+<p>두께 9㎜ 이하의 초슬림·초경량 디자인을 채택하고 측면에는 지문인식 센서를 탑재할 가능성이 높다. 후면 카메라 모듈도 기존 세로형 배열에서 직사각형 형태로 변경될 수 있다는 전망이 나온다.</p>
+<p>디스플레이는 6.5인치 커버 화면과 8인치 내부 폴더블 화면으로 구성될 전망이다. 두 화면 모두 다이내믹 AMOLED 2X 패널을 적용하고, 최대 밝기 3000니트 이상과 HDR10+ 콘텐츠 재생을 지원할 것으로 보인다고 샘모바일은 전했다.</p>
+<p>■ 카메라</p>
+<p>갤Z폴드9 울트라는 후면에 트리플 카메라를 탑재할 것으로 예상된다. 최근 삼성의 카메라 기술 발전 추세를 고려하면 광학식 손떨림 보정(OIS)을 지원하는 2억 화소 메인 카메라와 자동초점(AF) 기능을 갖춘 5000만 화소 초광각 카메라, OIS를 지원하는 5000만 화소 망원 카메라가 탑재될 가능성이 거론된다. 전면에는 각각 커버 디스플레이와 내부 폴더블 화면에 배치되는 1200만 화소 카메라 2개가 탑재될 수 있다.</p>
+<p>동영상 촬영 기능도 강화될 전망이다. 모든 카메라가 4K 해상도에서 초당 60프레임(60fps) 촬영을 지원하고, 후면 메인 카메라와 초광각 카메라는 8K 해상도에서 초당 30프레임(30fps) 촬영이 가능할 것으로 예상된다.</p>
+<p>전문가급 영상 제작을 위한 APV(Advanced Professional Video) 포맷도 지원할 수 있다. 로그(Log) 촬영 기능과 내장 LUT(룩업 테이블)를 활용하면 색 보정에 유리한 플랫 프로파일이나 사용자가 원하는 색상 프로파일을 적용해 영상을 촬영할 수 있다.</p>
+<p>■ 하드웨어 사양</p>
+<p>갤럭시Z폴드9 울트라에는 퀄컴의 차세대 프로세서인 스냅드래곤 8 엘리트 익스트림 6세대가 탑재될 것으로 예상된다. 2나노 공정으로 제조되는 이 칩은 전작에 탑재된 프로세서보다 CPU 성능과 GPU 성능이 향상되고 연결성도 강화될 것으로 전망된다.</p>
+<p>메모리는 12GB 또는 16GB LPDDR6 램을 탑재하고, 저장 공간은 256GB·512GB·1TB 중에서 선택할 수 있을 것으로 보인다. 저장장치는 차세대 규격인 UFS 5.0을 지원할 가능성이 제기된다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/011/0004677174" target="_blank" rel="noopener">“볼 것도 없는데 비싸네” 불만 터지자…1만3900원→7000원 ‘승부수’ 던진 디즈니+</a></h3>
+      <p class="meta">서울경제 · 2026-10-30 18:06:07 &nbsp;<span class="chip">IT/과학</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>월트디즈니 컴퍼니의 온라인동영상서비스(OTT) 디즈니플러스(디즈니+)가 월 7000원에 이용할 수 있는 광고형 요금제를 출시한다. 기존 프리미엄 요금제(월 1만 3900원)의 절반 수준이다. 국내 OTT 시장에서 고전을 면치 못하고 있는 디즈니+가 ‘만년 꼴찌’ 타이틀을 벗어날 수 있을지 주목된다.</p>
+<p>월트디즈니 컴퍼니 코리아는 광고형 스탠다드 멤버십을 다음달 10일부터 순차적으로 선보인다고 30일 밝혔다. 이용자별 가입 가능 시점은 다를 수 있으며, 17일부터는 누구나 가입할 수 있다.</p>
+<p>광고형 스탠다드는 시청 전이나 중간에 광고가 포함되며 최대 1080p 화질과 5.1 오디오를 지원한다. 최대 2대 기기에서 동시에 시청할 수 있고, 월 4000원을 추가하면 같은 가구에 거주하지 않는 가족이나 친구 등 1명을 추가 회원으로 등록할 수 있다.</p>
+<p>신규 멤버십 출시와 함께 기존 요금도 인상된다. 내달 10일 이후 신규 가입자에게는 스탠다드 멤버십 월 1만 1500원, 프리미엄 멤버십 월 1만 6500원의 요금이 적용된다. 기존 구독자는 당분간 현재 요금이 유지된다.</p>
+<p>‘국내 OTT 꼴찌’ 타이틀 떨쳐낼까</p>
+<p>디즈니+는 보다 저렴한 광고형 모델 도입을 통해 폭넓은 선택권을 제공한다는 계획이다. 디즈니+는 국내에서 OTT 이용자 수 꼴찌로 추락한 지 오래다. 데이터플랫폼 기업 아이지에이웍스의 모바일인덱스에 따르면 지난 9월 디즈니+ 이용자는 373만 2798명으로 전월 대비 6.9% 줄었다.</p>
+<p>지난 2021년 국내에서 공식 서비스를 시작한 뒤 ‘무빙’, ‘카지노’, ‘조명가게’처럼 흥행에 성공한 오리지널은 있었어도 장기 구독으로는 이어지지 않은 탓이다. 누리꾼들 사이에선 “오리지널 공백이 길어 볼 게 없다”는 얘기도 나온다. 지난 2023년 ‘무빙’이 공개된 달에는 이용자가 48%나 증가해 월 이용자 수 400만명을 넘어서기도 했지만, 이후 2년여간 200만명~300만명대의 저조한 이용자 수에 머물러 있다.</p>
+<p>디즈니+는 공개를 앞둔 기대작 ‘재혼 황후’, ‘현혹’ 등 오리지널 콘텐츠를 비롯해 광고형 스탠다드로 소비자 선택권을 넓혀 이용자를 끌어모으겠다는 계획이다.</p>
+<p>“OTT 구독료 너무 비싸”</p>
+<p>한편 국민 10명 중 6명은 OTT, 콘텐츠 스트리밍, 생성형 인공지능(AI) 등에 지불하는 구독료가 비싸다고 느끼는 것으로 나타났다.</p>
+<p>국회 과학기술정보방송통신위원회 소속 이정헌 의원실과 서울YMCA 시민중계실이 실시한 ‘2026년 디지털 플랫폼 이용자 편익에 관한 인식조사’에 따르면 응답자의 59.3%는 현재 이용 중인 디지털 플랫폼 서비스의 구독료가 비싸다고 답했다. ‘다소 비싸다’는 응답이 41%, ‘매우 비싸다’는 응답이 18.3%인 반면, ‘저렴하다’는 응답은 13.7%에 그쳤다. 응답자들이 가장 많이 이용하는 유료 서비스는 OTT로 82.7%의 비중을 차지했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/014/0005596984" target="_blank" rel="noopener">아이폰 &#x27;패닉풀&#x27; 이어 듀오 &#x27;크랙게이트&#x27;…애플, 잇단 품질 논란에 &#x27;진땀&#x27;[1일IT템]</a></h3>
+      <p class="meta">파이낸셜뉴스 · 2026-10-30 10:52:17 &nbsp;<span class="chip">IT/과학</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>고가 신제품 라인업에 줄줄이 완성도 논란</p>
+<p>&quot;내구성 논란 장기화 애플 전반에 악영향&quot;</p>
+<p>[파이낸셜뉴스] 애플이 최근 내놓은 신제품마다 품질 논란에 휩싸이며 고객 신뢰가 흔들리고 있다. 첫 폴더블폰 아이폰 듀오에서는 내부 화면이 깨졌다는 사례가 잇따랐고, 앞서 출시된 아이폰18 프로 시리즈에서도 기기가 갑자기 꺼졌다 다시 켜지는 &#x27;패닉풀&#x27; 현상이 발생했다. 고가 제품임에도 출시 초기부터 내구성 문제가 불거지면서 소비자들의 구매 결정에 부담으로 작용하고 있다.</p>
+<p>듀오 힌지 주변 화면 균열…중고 시세도 하락</p>
+<p>30일 업계에 따르면 애플은 아이폰 듀오 일부 제품에서 내부 디스플레이 문제가 발생한 사실을 인정하고, 이용자에게 애플 지원을 통한 교체를 안내했다. 이용자는 애플 지원 앱을 통해 문제를 접수한 뒤 공인 서비스센터에서 결함이 확인되면 구매 경로와 관계없이 무상 교체받을 수 있다.</p>
+<p>듀오는 지난 23일 출시 직후 화면이 접히는 힌지 부근에 균열이 생기거나 디스플레이에 밝은 선이 나타났다는 제보가 잇따랐다. 애플은 문제가 발생한 제품이 소수라고 밝혔지만, 결함 원인과 전체 발생 규모는 공개하지 않았다. 전자기기 수리 전문업체 아이픽스잇(iFixit)은 분해 분석을 바탕으로 힌지 내부의 중앙 지지대가 충분히 물러나지 않아 화면에 압력이 가해졌을 가능성을 제기했다.</p>
+<p>국내 온라인 커뮤니티에는 화면 파손 우려와 앱 호환성 문제 등을 이유로 환불을 고려한다는 글이 올라오고 있다. 화면에 이상이 없는데도 향후 파손 가능성에 대비해 제품을 반품하려 한다는 반응도 나온다. 균열이 실제로 발생했는지여부와 별개로, 내부 화면이 장기간 사용에도 버틸 수 있는 지에 대한 의구심이 커지는 분위기다.</p>
+<p>내구성 논란은 듀오의 중고 매물 가격에도 반영되고 있다. 듀오 256GB 모델은 329만원으로 출시됐다. 중고 매물 가격은 출시 초기 382만원까지 올랐지만 최근 340만원 선으로 내려왔다. 여전히 출고가를 웃돌지만, 중고 시세가 고점보다 약 40만원 하락한 것이다.</p>
+<p>애플이 듀오의 교체용 제품을 제때 공급할 수 있을지도 변수로 떠오르고 있다. 시장조사업체 카운터포인트리서치는 아이폰 듀오의 초기 공급 가능 물량을 전 세계 600만대 이하로 추산했다. 국내 신규 주문도 내년 1월 말께 받을 수 있을 정도로 공급이 빠듯한 상황이다.</p>
+<p>애플은 국내 교체 수요에 대응하기 위해 리퍼 제품과 새 제품을 별도로 확보했다는 입장이다. 다만 교체용 재고 규모와 실제 처리 기간은 공개되지 않았다. 물량이 제한된 상황에서 결함 제품이 더 늘 경우 교체 대기 기간이 길어질 가능성도 배제하기 어렵다.</p>
+<p>프로 시리즈 재부팅 논란까지…품질 신뢰 시험대</p>
+<p>앞서 아이폰18 프로 시리즈는 페이스ID 인증에 실패했을 때 기기가 예기치 않게 재시동되는 패닉풀 현상으로 논란이 됐다. 애플은 지난 9월 29일 iOS 27.0.1 업데이트에서 관련 오류를 수정했다고 밝혔지만, 일부 이용자는 업데이트 뒤에도 재부팅을 겪었다고 토로했다.</p>
+<p>애플은 오류의 구체적인 원인을 공개하지 않았다. 업데이트로 문제가 해결된 기기는 교환·환불 대상에서 제외한다는 입장도 내놔 같은 증상이라도 업데이트 여부에 따라 사후 조치가 달라질 수 있다는 우려가 제기된다.</p>
+<p>아이폰18 프로 256GB 모델의 국내 출고가는 199만원, 아이폰 듀오 256GB 모델은 329만원이다. 업계에서는 고가 스마트폰일수록 기능뿐 아니라 출시 초기 품질 안정성이 구매 결정에 큰 영향을 미친다는 분석이 나온다. 특히 화면 내구성과 기기 작동은 장기간 사용할 제품을 고를 때 소비자가 중요하게 살피는 요소로 꼽힌다.</p>
+<p>업계 관계자는 &quot;폴더블폰이 대중화되려면 화면과 힌지의 내구성에 대한 소비자 신뢰가 먼저 쌓여야 한다&quot;라며 &quot;이번 논란이 장기화되면 아이폰 듀오뿐 아니라 애플 전반에 대한 소비자 인식에 영향을 줄 수 있을 것&quot;이라고 말했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/mnews/article/277/0005835857" target="_blank" rel="noopener">[Why&amp;Next]데이터 탐내는 골드만삭스, 티맵 인수하는 진짜 이유</a></h3>
+      <p class="meta">아시아경제 · 2026-10-30 12:10:59 &nbsp;<span class="chip">IT/과학</span> <span class="chip src">섹션 상위 기사로 보충</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>이용자 데이터 확보해 AI 시너지</p>
+<p>&#x27;쪼개기 상장&#x27; 논란…향후 IPO 추진</p>
+<p>&quot;수익성이 나지 않았던 내비게이션과 지도앱이 인공지능(AI) 발달로 중요도가 커진 것은 결국 데이터를 갖고 있기 때문이다.&quot;</p>
+<p>글로벌 투자은행(IB) 골드만삭스가 국내 1위 내비게이션 서비스 &#x27;티맵&#x27; 운영사인 티맵모빌리티의 경영권 인수를 추진하면서 지도앱 업계가 술렁이고 있다. 구글이 AI를 기반으로 국내 시장을 적극 공략하는 가운데 티맵까지 해외 자본을 등에 업으면 내비게이션을 비롯한 지도서비스 시장 지형이 요동칠 수 있다.</p>
+<p>티맵은 지난해 매출 2835억원, 영업손실 141억원을 기록했다. 하지만 연간 기준 처음으로 250억원의 순이익을 거뒀고, 지속적으로 비핵심 자산을 매각하면서 올해 6월 월간 기준으로 첫 영업이익 흑자를 냈다. 지도업계 관계자는 &quot;그간 지도앱과 내비게이션 서비스는 필요하지만 사업자 입장에서 큰 수익이 나지 않는 변방 사업이었다&quot;면서 &quot;최근 AI 발달로 단순 길 안내를 넘어 장소 추천, 콘텐츠 큐레이터 등을 담는 플랫폼으로 진화하면서 사업에 대한 재평가가 이뤄지고 있는 것&quot;이라고 분석했다.</p>
+<p>IB업계에 따르면 티맵모빌리티 최대 주주인SK스퀘어는 골드만삭스와 연내 마무리를 목표로 경영권 매각 협상을 진행 중이며, 경영권 매각 뒤에도 지분 일부를 보유해 2대 주주로 남을 예정이다. 골드만삭스는 SK스퀘어(지분율 63.23%)뿐 아니라 쎈타모빌리티투자목적회사, 테라미터홀딩스, 국민은행 등 주요 재무적투자자(FI)의 지분 인수도 검토하는 것으로 전해졌다.</p>
+<p>골드만삭스가 티맵 인수를 추진하는 핵심은 결국 데이터다. 방대한 지도와 사용자 이용 데이터는 AI 사업과 연계해 부가 자치를 창출할 수 있으며, 미래 신사업을 추진하는 데 있어 중요한 자산이 될 수 있다. 골드만삭스는 지난해 사모펀드 운용사 VIG파트너스와 컨소시엄을 구성해 카카오모빌리티 지분 인수를 추진하는 등 모빌리티 시장에 잇단 관심을 보여왔다.</p>
+<p>티맵이 이번 손바뀜을 계기로 기업공개(IPO) 절차를 밟을지 여부에도 시장의 관심이 쏠리고 있다. SK스퀘어는 2021년 티맵모빌리티 IPO를 검토했지만 자회사 중복상장 논란 등으로 어려움을 겪었다. 하지만 골드만삭스가 주인이 되면 &#x27;쪼개기 상장&#x27; 논란에서 벗어날 수 있고 IPO로 자본 확충에 나설 수 있다. SK스퀘어는 2대 주주로 남으면서 IPO 과실을 챙길 수 있고, 글로벌 네트워크를 갖춘 투자자와의 파트너십을 통해 AI 분야 등에서 시너지를 창출한다는 복안이다.</p>
+<p>경쟁업체도 티맵의 행보를 주시하고 있다. 네이버(NAVER) 관계자는 &quot;그간 변방에 있던 지도사업이 AI 발달로 주목도가 높아졌다&quot;면서 &quot;AI 시대 추가적인 가치를 창출할 수 있는 핵심 데이터를 보유하면서 이를 활용해 부가적인 콘텐츠와 서비스 개발에 적극 나선 상황&quot;이라고 전했다. 카카오모빌리티 관계자는 &quot;자율주행, 피지컬 AI 서비스를 위해선 위치정보가 굉장히 중요하고 이에 대한 가치는 더욱 커질 것&quot;이라고 말했다.</p>
+<p>사모펀드 인수 관련 티맵모빌리티 측은 아직 계약이 마무리되지 않은 만큼 구체적인 논의는 나오지 않은 상황이며, 미래를 위한 투자 차원에서 접근하고 있다고 전했다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <section class="sec">
+    <h2 class="sec-title"><span class="tick"></span>🌍 세계 인기 기사 4건<em>언론사별 랭킹에서 선별</em></h2>
+  <article class="card">
+    <div class="rank">1</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/081/0003694473?ntype=RANKING" target="_blank" rel="noopener">“3년 전 임신했던 것 같은데”…몸속에 태아가 돌로 굳어 있었다 [월드픽]</a></h3>
+      <p class="meta">서울신문 · 2026-10-31 18:02:16 &nbsp;<span class="chip">세계</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>3년간 만성적으로 아랫배 통증을 겪던 여성이 병원을 찾아 검사한 결과 태어나지 못한 채 돌처럼 굳어버린 태아가 발견됐다.</p>
+<p>지난 9월 국제의학증례보고저널에 게재된 이 사례는 동아프리카 미승인국 소말릴란드 의료진이 보고한 42세 여성 환자의 사례다.</p>
+<p>환자는 지난 3년간 아랫배 통증과 복부 팽만감을 겪어 왔는데, 최근 증상이 점점 심해지면서 병원을 찾았다.</p>
+<p>의료진이 환자에게 최근 몇 년 새 겪었던 증상을 문진한 결과 환자는 약 3년 전 배가 불러왔고, 태동도 느꼈다고 말했다. 그런데 어느 순간 이러한 증상이 멈췄고, 불러왔던 배도 차츰 크기가 줄어들었다고 한다.</p>
+<p>환자는 이미 4번의 임신과 3번의 출산 경험이 있었고, 자녀 3명을 키우고 있을 만큼 임신과 출산에 익숙한 상태였다.</p>
+<p>그러나 저소득층이었던지라 당시 병원을 한번도 찾지 않았고, 임신처럼 느꼈던 증상도 결국 가라앉자, 임신으로 여기지 않았던 것으로 보인다.</p>
+<p>환자가 증상을 느끼는 부위를 진찰하자 배꼽 높이까지 올라오는, 딱딱하고 잘 움직이지 않는 덩어리가 만져졌다.</p>
+<p>혈액검사에서는 가벼운 빈혈이 확인됐고, 임신 여부를 판정하는 호르몬 수치도 음성으로 나왔다.</p>
+<p>초음파 검사에서는 뱃속에서 석회화된 덩어리가 보였고, 자궁은 비어 있는 상태였다.</p>
+<p>구체적인 결과는 컴퓨터단층촬영(CT)에서 나왔다. 증상 부위를 3차원으로 재구성하자 18×12×10㎝ 크기의 덩어리 안에서 두개골, 척추, 갈비뼈, 팔다리뼈가 뚜렷하게 나타났다.</p>
+<p>의료진은 개복수술을 통해 석회화한 태아를 통째로 꺼냈다. 태아는 골반 뒤쪽 복막에 붙은 채 두꺼운 섬유 조직 주머니에 싸여 있었다.</p>
+<p>다행히 주변 장기 손상이나 수술 후 합병증은 없었다.</p>
+<p>의료진은 1차 복강 임신이라는 진단을 내렸다.</p>
+<p>정상적인 임신의 경우 수정란이 나팔관을 지나 자궁 안쪽 벽에 착상한다.</p>
+<p>그러나 수정란이 자궁 바깥 배 속, 즉 복막에 착상하는 경우 복강 임신으로 진단된다.</p>
+<p>복강 임신에는 1차 복강 임신과 2차 복강 임신이 있는데, 수정란이 처음부터 복막에 착상한 경우 1차, 수정란이 나팔관에 먼저 착상했다가 나팔관이 터지면서 배 속으로 빠져나가 다시 자리 잡은 경우 2차다.</p>
+<p>복강 임신 중 대부분은 2차 복강 임신이며, 이 환자처럼 1차 복강 임신은 훨씬 드물다.</p>
+<p>환자는 수술 다음 날 미열과 메스꺼움 정도 외에는 별다른 증상이 없었고, 이 증상도 곧 호전됐다. 수술 후 1·3·6개월 추적 검사에서도 특별한 증상 없이 건강한 상태를 유지했다.</p>
+<p>태아가 돌로 굳어진 상태, 즉 석태아는 태아가 배 속에 자리 잡는 복강 임신 때문에 발생한다. 태아가 숨진 뒤 몸이 흡수하기에 너무 큰 상태일 때 임신부의 몸은 감염을 막기 위해 태아 주위를 칼슘으로 덮는다. 그러면서 태아가 서서히 돌처럼 굳어지는 것이다.</p>
+<p>지난 400년간 의학 문헌에 보고된 석태아 사례는 340건 정도에 불과하다.</p>
+<p>태아를 출산하지 못하고 몸속에 지니고 있다 발견되는 사례는 대체로 수십년 뒤 폐경을 겪은 여성들이 대부분이었다. 연구진은 이번 환자의 경우 42세의 나이에 불과 3년 만에 증상이 나타난 점이 이례적이라고 밝혔다.</p>
+<p>특히 이번 사례는 3년 전 임신 당시 산전 진찰만 받았더라도 일찍 발견할 수 있었을 것이라고 연구진은 추정했다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">2</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/437/0000518504?ntype=RANKING" target="_blank" rel="noopener">미 중간선거 사전투표 &#x27;역대 최다&#x27;…트럼프 자신감에 빨간불?</a></h3>
+      <p class="meta">JTBC · 2026-10-31 18:39:24 &nbsp;<span class="chip">세계</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>[앵커]</p>
+<p>미국 중간선거 사전투표에 참여한 사람이 역대 최다 기록을 넘었습니다. 공화당의 전통적인 텃밭에서도 투표 열기가 뜨거운데, 선거 판세가 민주당에 유리하게 움직이고 있단 분석도 나오고 있습니다. 트럼프 대통령은 하루 전 취소했던 유세를 다시 잡으면서 막판 총력전에 나섰습니다.</p>
+<p>워싱턴 정강현 특파원입니다.</p>
+<p>[기자]</p>
+<p>중간선거를 나흘 앞둔 현지시간 30일, 사전투표에 참여한 미국 유권자가 4800만 명에 육박했습니다.</p>
+<p>2022년 중간선거 전체 사전투표 기록을 이미 넘어섰습니다.</p>
+<p>특히 공화당 텃밭인 텍사스는 4년 전 같은 시점보다 50%, 사우스캐롤라이나는 83%나 늘었습니다.</p>
+<p>캔자스에서도 사전투표가 크게 증가했습니다.</p>
+<p>사전투표 열기가 어느 당에 유리할지는 알 수 없지만, 선거 판세는 공화당에 불리하게 움직이고 있습니다.</p>
+<p>초당파 선거분석기관 쿡 폴리티컬 리포트는 하원 선거구 12곳을 추가해, 총 222곳을 민주당 우세 지역으로 평가했습니다.</p>
+<p>다수당 기준을 이미 넘어선 수치입니다.</p>
+<p>상원에서도 공화당 텃밭인 텍사스와 캔자스를 비롯해, CNN이 조사한 4개 주 모두 민주당 후보가 앞섰습니다.</p>
+<p>트럼프 대통령은 하루 전까지만 해도 캔자스 유세는 필요없다고 자신했습니다.</p>
+<p>[도널드 트럼프/미국 대통령 : 캔자스에 왜 안 가냐고요? 굳이 갈 필요가 없으니까요.]</p>
+<p>하지만 하루 만에 취소했던 캔자스와 아이오와 현장 유세를 다시 잡았습니다.</p>
+<p>공화당 강세 지역까지 접전이 이어지자, 막판 지지층 결집에 나선 것으로 풀이됩니다.</p>
+<p>[도널드 트럼프/미국 대통령 : 이번이 마지막 유세인 줄 알았습니다. 이제 좀 쉴 수 있을 줄 알았는데 말입니다.]</p>
+<p>중간선거를 앞둔 마지막 주말, 트럼프 대통령은 현장 유세와 전화 유세를 넘나들며 막판 총력전에 나섭니다.</p>
+<p>지난 대선에서 압승했던 지역들마저 다시 지켜내야 하는 처지가 되면서, 트럼프 대통령의 막판 선거운동도 새로운 지지층 확보보다는 기존 지지 기반의 이탈을 막는 데 집중되고 있습니다.</p>
+<p>[화면출처 유튜브 &#x27;CBS13News&#x27; &#x27;WhiteHouse&#x27;]</p>
+<p>[영상취재 임상기 영상편집 김영석 영상디자인 신하경 이정회 영상자막 이지구]</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">3</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/011/0004677289?ntype=RANKING" target="_blank" rel="noopener">“친구 결혼식에 10만원? 너무 많아요”…축의금 2만원 상한까지 등장한 中의 속사정</a></h3>
+      <p class="meta">서울경제 · 2026-10-31 11:42:09 &nbsp;<span class="chip">세계</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>결혼하는 부부에게 현금과 여행 지원금을 지급하는 중국 지방정부의 장려책이 잇따르고 있다. 일부 지역에서는 결혼 비용 부담을 줄이기 위해 축의금 상한액까지 제시하며 혼인과 출산을 독려하고 나섰다.</p>
+<p>결혼하면 현금에 여행비까지…中 곳곳서 장려금 지급</p>
+<p>31일 중국 경제매체 제일재경에 따르면 최근 광둥성 둥관시 창핑진 쑤컹촌에서는 신혼부부와 다자녀 가정을 대상으로 결혼·출산 장려금을 전달하는 행사가 열렸다.</p>
+<p>이날 둘째와 셋째 자녀를 출산한 10가구에 총 14만 위안(약 2800만원)이 지급됐다. 둘째를 낳은 8가구는 각각 1만 위안, 셋째를 낳은 2가구는 각각 3만 위안을 받았다.</p>
+<p>신혼부부를 위한 지원도 눈길을 끌었다. 행사에 참석한 신혼부부 3쌍은 각각 3888위안(약 78만원)의 결혼 지원금과 같은 금액에 해당하는 답례용 과자 교환권을 받았다.</p>
+<p>특히 마을이 주최한 맞선 행사에서 인연을 맺고 혼인신고까지 마친 부부에게는 별도의 여행 지원금도 제공됐다.</p>
+<p>이 같은 결혼 장려책은 중국 곳곳으로 확산하고 있다. 광둥성 포산시 순더구의 한 마을은 신혼부부에게 일시금 2500위안(약 50만원)을 지급하는 제도를 도입했다. 자녀를 출산하면 3000위안(약 60만원)을 추가로 지원하고, 미취학 아동에게는 보육·교육비 보조금도 제공한다.</p>
+<p>산시성(山西省) 뤼량시는 지난해부터 일정 요건을 충족한 35세 이하 여성의 초혼 신고에 1500위안(약 30만원)의 장려금을 지급하고 있다.</p>
+<p>푸젠성 밍시현도 초혼 부부가 혼전 건강검진과 거주지 등록 등 관련 조건을 충족하면 3000위안의 결혼 지원금을 제공한다.</p>
+<p>이 밖에 저장성 항저우와 닝보, 안후이성 우후 등에서도 신혼부부를 대상으로 소비쿠폰이나 현금성 혜택을 마련했다.</p>
+<p>“축의금은 2만원만”…피로연 비용에도 상한 권고</p>
+<p>결혼을 장려하기 위한 현금 지원뿐 아니라 과도한 축의금과 예물 부담을 줄이려는 움직임도 나타나고 있다.</p>
+<p>최근 광시좡족자치구 류저우시 싼장둥족자치현은 축의금 액수에 관한 권고 기준을 발표했다. 가까운 친족을 제외한 일반 하객의 축의금을 농촌에서는 100위안(약 2만원), 도시 지역에서는 200위안(약 4만원) 이하로 내도록 권장하는 내용이다.</p>
+<p>혼례와 장례에 드는 비용을 줄이고, 과도한 지출 경쟁을 막겠다는 취지다.</p>
+<p>산시성(陝西省) 상뤄시도 비슷한 기준을 마련했다. 농촌 지역의 축의금은 100위안, 도심 지역은 200위안을 넘지 않도록 권고했다.</p>
+<p>비싼 예물인 ‘차이리(彩禮)’를 줄이거나 없애는 결혼 문화를 장려하는 한편, 혼례·장례 피로연 비용도 농촌은 테이블당 평균 300위안(약 6만원), 도시는 600위안(약 12만원) 이내로 유지하도록 제안했다.</p>
+<p>간쑤성 란저우시의 한 지역에서도 “큰 의미를 담은 작은 선물은 장려하고, 축의금을 100위안 이하로 제한한다”는 취지의 지침을 내놨다.</p>
+<p>축의금 액수로 친밀도를 판단하거나 서로 더 많은 돈을 내려고 경쟁하는 관행도 지양하도록 했다.</p>
+<p>다만 이들 기준은 법적 처벌을 전제로 한 강제 규정이 아니라 지역 주민들의 자발적인 참여를 유도하는 권고 사항이다.</p>
+<p>장취안바오 수도경제무역대학 교수는 “이러한 결혼 장려책은 적령기 청년들에게 결혼과 출산을 유도하는 적극적인 신호”라며 “결혼부터 출산, 양육, 교육으로 이어지는 전반적인 비용 부담을 낮추는 효과가 있다”고 평가했다.</p>
+<p>중국 지방정부들이 결혼 지원에 적극적으로 나선 배경에는 혼인 인구 감소가 있다. 중국 민정부에 따르면 올해 상반기 혼인신고는 327만5000쌍으로 지난해 같은 기간 353만9000쌍보다 26만4000쌍(7.46%) 감소했다.</p>
+<p>중국의 연간 혼인신고 건수는 지난해 일시적으로 반등했지만 올해 상반기 다시 감소세로 돌아섰다.</p>
+<p>각 지방정부가 결혼 지원금과 출산 장려금에 이어 축의금·혼례비 절감 정책까지 내놓으면서 청년층의 경제적 부담을 낮추기 위한 시도가 이어지고 있다.</p></div></details>
+    </div>
+  </article>
+  <article class="card">
+    <div class="rank">4</div>
+    <div class="card-body">
+      <h3><a href="https://n.news.naver.com/article/277/0005836116?ntype=RANKING" target="_blank" rel="noopener">&quot;18~22세 男 전원 끌고 간다, 女는 자원&quot;…군대 폐지 외치던 &#x27;이 나라&#x27; 결국</a></h3>
+      <p class="meta">아시아경제 · 2026-10-31 10:24:40 &nbsp;<span class="chip">세계</span></p>
+      <div class="summary"><span class="cap">AI 요약</span>
+        <p>(요약 실패 — 실행 로그를 확인해 주세요.)</p></div>
+      <details><summary>기사 원문 보기</summary>
+        <div class="orig"><p>단계적으로 확대…9개월 복무 기본 유지</p>
+<p>건강상 문제 없는 해당 연령대 남성 대상</p>
+<p>리투아니아가 2032년부터 18~22세 남성을 대상으로 보편적 징병제를 시행한다. 연간 징집 인원도 늘어날 전망이다.</p>
+<p>연합뉴스는 현지 매체 LRT 등을 인용해 기타나스 나우세다 리투아니아 대통령이 지난 29일(현지시간) 국가방위위원회 회의 이후 보편적 징병제를 2032년부터 시행하기로 결정했다고 보도했다. 보편적 징병제는 건강상 문제가 없는 해당 연령대의 남성을 대상으로 하며, 여성은 기존처럼 자원입대 방식으로 군 복무에 참여할 수 있다.</p>
+<p>나우세다 대통령은 현재 인구 구조와 건강상 이유로 복무가 어려운 청년들의 비율 등을 고려하면 제도 시행 이후 매년 약 7500명을 징집하게 될 것으로 예상했다. 리투아니아군은 징집 대상에 해당하는 남성을 모두 징집할 경우 약 8000명까지 늘어날 수 있다고 설명했다.</p>
+<p>리투아니아군은 징집 규모를 한꺼번에 늘리지 않고 단계적으로 확대할 계획이다. 올해 징집 인원은 약 4900명으로 지난해보다 1000명 증가했다. 2027년에는 5000명 이상, 2028년에는 약 6000명을 징집할 것으로 예상하고 있다. 이후 2029년 6000명 이상, 2030년 약 7000명, 2031년 7000명 이상으로 늘려 2032년에는 8000명 수준에 도달한다는 구상이다.</p>
+<p>복무 기간은 현재와 마찬가지로 9개월을 기본으로 유지한다. 징집은 여름과 겨울 두 차례에 걸쳐 진행하는 방안이 검토되고 있다. 드론 조종 교육을 비롯해 국경수비대와 소방·구조기관을 지원하는 등 복무 형태도 다양화할 예정이다.</p>
+<p>보편적 징병제 도입 시점을 2032년으로 정한 것은 군의 수용 능력 확보를 위해서다. 징집 인원이 늘어나면 생활관과 훈련장 등 시설을 확충하고 교관도 추가로 확보해야 한다. 나우세다 대통령은 필요한 시설과 인력 등을 마련하는 데 약 1억2000만유로가 들 것으로 추산했다.</p>
+<p>리투아니아는 2008년 의무복무제를 폐지하고 직업군인 중심으로 군을 운영했지만, 러시아의 크림반도 병합 이후 안보 위협이 커지자 2015년 부분 징병제를 부활시켰다. 이번 개편은 러시아의 군사적 위협에 대응해 병력과 예비군 전력을 확대하려는 조처로 전해졌다.</p></div></details>
+    </div>
+  </article>
+  </section>
+  <footer>이 브리핑은 네이버 뉴스 ‘언론사별 랭킹(많이 본 뉴스)’과 섹션 상위 기사를 바탕으로 자동 생성됐습니다. 각 기사의 저작권은 해당 언론사에 있으며, 원문 링크를 통해 출처를 확인할 수 있습니다. · 요약: 요약 없음 · <a class="foot-link" href="https://souljjab.github.io/news/archive/">지난 브리핑 모아보기</a></footer>
+</div>
+</body>
+</html>
